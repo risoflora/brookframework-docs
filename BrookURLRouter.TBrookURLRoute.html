@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookURLRouter: Class TBrookURLRoute</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="TBrookURLRoute"></span><h1 class="cio">Class TBrookURLRoute</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookURLRouter.html">BrookURLRouter</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookURLRoute = class(<a class="normal" href="BrookHandledClasses.TBrookHandledCollectionItem.html">TBrookHandledCollectionItem</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class to represent a URL route item.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledCollectionItem.html">TBrookHandledCollectionItem</a></li>
+<li class="thisitem">TBrookURLRoute</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>internal const <b><a  href="BrookURLRouter.TBrookURLRoute.html#DefaultReqMethods">DefaultReqMethods</a></b> = [<a  href="BrookUtility.html#rmGET">rmGET</a>, <a  href="BrookUtility.html#rmPOST">rmPOST</a>];</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookURLRouter.TBrookURLRoute.html#Create">Create</a></b>(ACollection: TCollection); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookURLRouter.TBrookURLRoute.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRoute.html#Validate">Validate</a></b>; inline;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#PCRE2Handle">PCRE2Handle</a></b>: Pointer read GetPCRE2Handle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Segments">Segments</a></b>: TArray&lt;string&gt; read GetSegments;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Variables">Variables</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read GetVariables;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#RawPattern">RawPattern</a></b>: string read GetRawPattern;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Path">Path</a></b>: string read GetPath;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#UserData">UserData</a></b>: Pointer read GetUserData;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Default">Default</a></b>: Boolean read FDefault write SetDefault
+      stored IsDefaultStored <a  href="BrookURLRouter.TBrookURLRoute.html#Default">default</a> False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Pattern">Pattern</a></b>: string read GetPattern write SetPattern;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#Methods">Methods</a></b>: <a  href="BrookUtility.html#TBrookHTTPRequestMethods">TBrookHTTPRequestMethods</a> read FMethods write FMethods
+      stored IsMethodsStored <a  href="BrookURLRouter.TBrookURLRoute.html#Default">default</a> <a  href="BrookURLRouter.TBrookURLRoute.html#DefaultReqMethods">DefaultReqMethods</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#OnMath">OnMath</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouteMatchEvent">TBrookURLRouteMatchEvent</a> read FOnMath write FOnMath;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#OnRequestMethod">OnRequestMethod</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouteRequestMethodEvent">TBrookURLRouteRequestMethodEvent</a>
+      read FOnRequestMethod write FOnRequestMethod;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoute.html#OnRequest">OnRequest</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouteRequestEvent">TBrookURLRouteRequestEvent</a> read FOnRequest
+      write FOnRequest;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultReqMethods"></span><code>internal const <b>DefaultReqMethods</b> = [<a  href="BrookUtility.html#rmGET">rmGET</a>, <a  href="BrookUtility.html#rmPOST">rmPOST</a>];</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Default">Default</a> route HTTP <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Methods">methods</a>.</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(ACollection: TCollection); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a></code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ACollection[in]</dt>
+<dd>Routes list.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frees an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a></code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Validate"></span><code>procedure <b>Validate</b>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if the route <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Pattern">pattern</a> is valid.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PCRE2Handle"></span><code>property <b>PCRE2Handle</b>: Pointer read GetPCRE2Handle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Contains the PCRE2 instance.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Segments"></span><code>property <b>Segments</b>: TArray&lt;string&gt; read GetSegments;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Contains all <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Path">path</a> <code>segments</code> (a.k.a. <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Path">path</a> levels).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Variables"></span><code>property <b>Variables</b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read GetVariables;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Contains all <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Path">path</a> <code>variables</code> (a.k.a. query-string parameters).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RawPattern"></span><code>property <b>RawPattern</b>: string read GetRawPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Contains the raw route <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Pattern">pattern</a>. For example, given a <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Pattern">pattern</a> <code>/foo</code>, the raw <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Pattern">pattern</a> is <code>&circ;/foo$</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Path"></span><code>property <b>Path</b>: string read GetPath;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Contains the route <code>path</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UserData"></span><code>property <b>UserData</b>: Pointer read GetUserData;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+User-defined data to be stored temporally in the route object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Default"></span><code>property <b>Default</b>: Boolean read FDefault write SetDefault
+      stored IsDefaultStored <a  href="BrookURLRouter.TBrookURLRoute.html#Default">default</a> False;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Default</code> route called if URL does not match any registered route.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Pattern"></span><code>property <b>Pattern</b>: string read GetPattern write SetPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Pattern</code> to find the route. It must be a valid regular expression in PCRE2 syntax.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Methods"></span><code>property <b>Methods</b>: <a  href="BrookUtility.html#TBrookHTTPRequestMethods">TBrookHTTPRequestMethods</a> read FMethods write FMethods
+      stored IsMethodsStored <a  href="BrookURLRouter.TBrookURLRoute.html#Default">default</a> <a  href="BrookURLRouter.TBrookURLRoute.html#DefaultReqMethods">DefaultReqMethods</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Allowed <code>methods</code> to find the route.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnMath"></span><code>property <b>OnMath</b>: <a  href="BrookURLRouter.html#TBrookURLRouteMatchEvent">TBrookURLRouteMatchEvent</a> read FOnMath write FOnMath;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when the <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Path">path</a> matches the route <a class="normal" href="BrookURLRouter.TBrookURLRoute.html#Pattern">pattern</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnRequestMethod"></span><code>property <b>OnRequestMethod</b>: <a  href="BrookURLRouter.html#TBrookURLRouteRequestMethodEvent">TBrookURLRouteRequestMethodEvent</a>
+      read FOnRequestMethod write FOnRequestMethod;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when the HTTP method matches a route allowed method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnRequest"></span><code>property <b>OnRequest</b>: <a  href="BrookURLRouter.html#TBrookURLRouteRequestEvent">TBrookURLRouteRequestEvent</a> read FOnRequest
+      write FOnRequest;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client requests the route.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

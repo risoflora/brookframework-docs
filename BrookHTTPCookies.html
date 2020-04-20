@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookHTTPCookies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<h1 class="unit">Unit BrookHTTPCookies</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Contains classes which handles server side cookies.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>DateUtils</li><li>Classes</li><li>HMAC</li><li>Base64</li><li><a  href="BrookUtility.html">BrookUtility</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookHTTPCookies.EBrookHTTPCookie.html"><code>EBrookHTTPCookie</code></a></td>
+<td class="itemdesc">Handles exceptions related to HTTP cookies classes.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookHTTPCookies.TBrookHTTPCookie.html"><code>TBrookHTTPCookie</code></a></td>
+<td class="itemdesc">Server side HTTP cookie item.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookHTTPCookies.TBrookHTTPCookiesEnumerator.html"><code>TBrookHTTPCookiesEnumerator</code></a></td>
+<td class="itemdesc">List enumerator for <code><a class="normal" href="BrookHTTPCookies.TBrookHTTPCookies.html">TBrookHTTPCookies</a></code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookHTTPCookies.TBrookHTTPCookies.html"><code>TBrookHTTPCookies</code></a></td>
+<td class="itemdesc">Server side HTTP cookie list.</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#TBrookHTTPCookieSameSite">TBrookHTTPCookieSameSite</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#TBrookHTTPCookieClass">TBrookHTTPCookieClass</a></b> = class of <a  href="BrookHTTPCookies.TBrookHTTPCookie.html">TBrookHTTPCookie</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#BROOK_COOKIE_SIG_PREFIX">BROOK_COOKIE_SIG_PREFIX</a></b>: string = 's:';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#BROOK_COOKIE_NAME_PREFIX">BROOK_COOKIE_NAME_PREFIX</a></b>: string = 'BrookCookie';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#SBrookEmptyCookieName">SBrookEmptyCookieName</a></b> = 'Empty cookie name.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookHTTPCookies.html#SBrookInvalidCookieName">SBrookInvalidCookieName</a></b> = 'Invalid cookie name: %s.';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookHTTPCookieSameSite"></span><code><b>TBrookHTTPCookieSameSite</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+SameSite cookie attribute types.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ssNone">ssNone</span>: The browser will send cookies with both cross-site requests and same-site requests.</li>
+<li>
+<span id="ssStrict">ssStrict</span>: The browser will only send cookies for same-site requests.</li>
+<li>
+<span id="ssLax">ssLax</span>: Same-site cookies are withheld on cross-site subrequests, but will be sent when a user navigates to the URL from an external site.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookHTTPCookieClass"></span><code><b>TBrookHTTPCookieClass</b> = class of <a  href="BrookHTTPCookies.TBrookHTTPCookie.html">TBrookHTTPCookie</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class-reference for <code><a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html">TBrookHTTPCookie</a></code>.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_COOKIE_SIG_PREFIX"></span><code><b>BROOK_COOKIE_SIG_PREFIX</b>: string = 's:';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Prefix to identify a signed cookie.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_COOKIE_NAME_PREFIX"></span><code><b>BROOK_COOKIE_NAME_PREFIX</b>: string = 'BrookCookie';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default cookie name.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyCookieName"></span><code><b>SBrookEmptyCookieName</b> = 'Empty cookie name.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Empty cookie name.'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidCookieName"></span><code><b>SBrookInvalidCookieName</b> = 'Invalid cookie name: %s.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Invalid cookie name: &lt;cookie-name&gt;.'</code>.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

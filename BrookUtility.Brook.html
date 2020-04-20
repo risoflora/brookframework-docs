@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookUtility: Record Brook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="Brook"></span><h1 class="cio">Record Brook</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookUtility.html">BrookUtility</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type Brook = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Global <code>Brook</code> object containing general purpose functions.</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>internal const <b><a  href="BrookUtility.Brook.html#DAYS">DAYS</a></b>: array[1..7] of string = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu',
+      'Fri', 'Sat');</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>internal const <b><a  href="BrookUtility.Brook.html#MONTHS">MONTHS</a></b>: array[1..12] of string = ('Jan', 'Feb', 'Mar', 'Apr', 'May',
+      'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="BrookUtility.Brook.html#FixPath">FixPath</a></b>(const APath: string): string; static; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="BrookUtility.Brook.html#FixEntryPoint">FixEntryPoint</a></b>(const APath: string): string; static; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="BrookUtility.Brook.html#DateTimeToUTC">DateTimeToUTC</a></b>(ADateTime: TDateTime): TDateTime; static; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="BrookUtility.Brook.html#DateTimeToGMT">DateTimeToGMT</a></b>(ADateTime: TDateTime): string; static; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="BrookUtility.Brook.html#SHA1">SHA1</a></b>(const S: string): string; static; inline;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DAYS"></span><code>internal const <b>DAYS</b>: array[1..7] of string = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu',
+      'Fri', 'Sat');</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Holds the name of <code>days</code> as 'Aaa' format.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MONTHS"></span><code>internal const <b>MONTHS</b>: array[1..12] of string = ('Jan', 'Feb', 'Mar', 'Apr', 'May',
+      'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Holds the name of <code>months</code> as 'Aaa' format.</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FixPath"></span><code>class function <b>FixPath</b>(const APath: string): string; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fixes a path by including the leading path delimiter and excluding the trailing one.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Path as static string.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Fixed path, e.g.: path -&gt; /path and /path/ -&gt; /path</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FixEntryPoint"></span><code>class function <b>FixEntryPoint</b>(const APath: string): string; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Extracts and fixes an entry-point by including the leading path delimiter and excluding the trailing one.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Path as static string.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Fixed entry-point, e.g.: /foo/bar -&gt; /foo </p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DateTimeToUTC"></span><code>class function <b>DateTimeToUTC</b>(ADateTime: TDateTime): TDateTime; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a given local time to UTC (Coordinated Universal Time).  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ADateTime[in]</dt>
+<dd>Local date/time.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Local time converted to UTC.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DateTimeToGMT"></span><code>class function <b>DateTimeToGMT</b>(ADateTime: TDateTime): string; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a given local time to GMT (Greenwich Mean Time).  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ADateTime[in]</dt>
+<dd>Local date/time.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Local time converted to GMT string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SHA1"></span><code>class function <b>SHA1</b>(const S: string): string; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Generates a given string to SHA-1 (Secure Hash Algorithm 1).  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>S[in]</dt>
+<dd>String to generate the SHA-1.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Generated SHA-1 as static string.</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

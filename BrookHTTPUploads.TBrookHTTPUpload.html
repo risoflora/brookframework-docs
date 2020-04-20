@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookHTTPUploads: Record TBrookHTTPUpload</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="TBrookHTTPUpload"></span><h1 class="cio">Record TBrookHTTPUpload</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookHTTPUploads.html">BrookHTTPUploads</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookHTTPUpload = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Structured type which holds the upload properties and allows to <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">save</a> the uploaded file.</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>constructor <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Create">Create</a></b>(AHandle: Pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">Save</a></b>(AOverwritten: Boolean; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">Save</a></b>(out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">Save</a></b>(AOverwritten: Boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">Save</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#SaveAs">SaveAs</a></b>(const APath: TFileName; AOverwritten: Boolean; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#SaveAs">SaveAs</a></b>(const APath: TFileName; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#SaveAs">SaveAs</a></b>(const APath: TFileName; AOverwritten: Boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#SaveAs">SaveAs</a></b>(const APath: TFileName); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Handle">Handle</a></b>: Pointer read GetHandle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#StreamHandle">StreamHandle</a></b>: Pointer read FStreamHandle;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Directory">Directory</a></b>: string read FDirectory;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Field">Field</a></b>: string read FField;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">Name</a></b>: string read FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Mime">Mime</a></b>: string read FMime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Encoding">Encoding</a></b>: string read FEncoding;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookHTTPUploads.TBrookHTTPUpload.html#Size">Size</a></b>: UInt64 read FSize;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AHandle: Pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates an instance of <code><a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html">TBrookHTTPUpload</a></code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AHandle[in]</dt>
+<dd>Upload <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Save"></span><code>function <b>Save</b>(AOverwritten: Boolean; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file defining the destination path by upload <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">name</a> and <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Directory">directory</a>.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOverwritten[in]</dt>
+<dd>Overwrite upload file if it exists.</dd>
+<dt>AError[out]</dt>
+<dd>Variable reference to store string describing the error if <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">save</a> fails.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the uploaded file is saved successfully.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Save"></span><code>function <b>Save</b>(out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file defining the destination path by upload <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">name</a> and <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Directory">directory</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AError[out]</dt>
+<dd>Variable reference to store string describing the error if <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">save</a> fails.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the uploaded file is saved successfully.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Save"></span><code>procedure <b>Save</b>(AOverwritten: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file defining the destination path by upload <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">name</a> and <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Directory">directory</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOverwritten[in]</dt>
+<dd>Overwrite upload file if it exists.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Save"></span><code>procedure <b>Save</b>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file defining the destination path by upload <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">name</a> and <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Directory">directory</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SaveAs"></span><code>function <b>SaveAs</b>(const APath: TFileName; AOverwritten: Boolean; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file allowing to define the destination path.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Absolute destination path.</dd>
+<dt>AOverwritten[in]</dt>
+<dd>Overwrite upload file if it exists.</dd>
+<dt>AError[out]</dt>
+<dd>Variable reference to store string describing the error if <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">save</a> fails.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the uploaded file is saved successfully.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SaveAs"></span><code>function <b>SaveAs</b>(const APath: TFileName; out AError: string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file allowing to define the destination path.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Absolute destination path.</dd>
+<dt>AError[out]</dt>
+<dd>Variable reference to store string describing the error if <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Save">save</a> fails.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the uploaded file is saved successfully.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SaveAs"></span><code>procedure <b>SaveAs</b>(const APath: TFileName; AOverwritten: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file allowing to define the destination path.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Absolute destination path.</dd>
+<dt>AOverwritten[in]</dt>
+<dd>Overwrite upload file if it exists.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SaveAs"></span><code>procedure <b>SaveAs</b>(const APath: TFileName); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saves the uploaded file allowing to define the destination path. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APath[in]</dt>
+<dd>Absolute destination path.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Handle"></span><code>property <b>Handle</b>: Pointer read GetHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Handle</code> of an upload.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StreamHandle"></span><code>property <b>StreamHandle</b>: Pointer read FStreamHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Stream <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Handle">handle</a> of the upload.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Directory"></span><code>property <b>Directory</b>: string read FDirectory;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Directory</code> of the uploaded file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Field"></span><code>property <b>Field</b>: string read FField;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Field</code> <a class="normal" href="BrookHTTPUploads.TBrookHTTPUpload.html#Name">name</a> of the upload.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Name"></span><code>property <b>Name</b>: string read FName;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Name</code> of the uploaded file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Mime"></span><code>property <b>Mime</b>: string read FMime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>MIME</code> (content-type) of the upload.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Encoding"></span><code>property <b>Encoding</b>: string read FEncoding;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Encoding</code> (transfer-<code>encoding</code>) of the upload.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Size"></span><code>property <b>Size</b>: UInt64 read FSize;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>Size</code> of the upload.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

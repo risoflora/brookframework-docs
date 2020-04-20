@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookURLRouter: Class TBrookURLRoutes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="TBrookURLRoutes"></span><h1 class="cio">Class TBrookURLRoutes</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookURLRouter.html">BrookURLRouter</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookURLRoutes = class(<a class="normal" href="BrookHandledClasses.TBrookHandledOwnedCollection.html">TBrookHandledOwnedCollection</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class to represent an list of URL routes.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TOwnedCollection</li>
+<li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledOwnedCollection.html">TBrookHandledOwnedCollection</a></li>
+<li class="thisitem">TBrookURLRoutes</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Create">Create</a></b>(AOwner: TPersistent); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#GetRouterClass">GetRouterClass</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouteClass">TBrookURLRouteClass</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#GetEnumerator">GetEnumerator</a></b>: <a  href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#NewPattern">NewPattern</a></b>: string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Add">Add</a></b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#First">First</a></b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Last">Last</a></b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#IndexOf">IndexOf</a></b>(const APattern: string): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Find">Find</a></b>(const APattern: string): <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#FindDefault">FindDefault</a></b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Remove">Remove</a></b>(const APattern: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Clear">Clear</a></b>; virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRoutes.html#Items">Items</a></b>[AIndex:Integer]: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
+      write SetItem;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TPersistent); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a></code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOwner[in]</dt>
+<dd>Routes persistent.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frees an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a></code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRouterClass"></span><code>class function <b>GetRouterClass</b>: <a  href="BrookURLRouter.html#TBrookURLRouteClass">TBrookURLRouteClass</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the default class for route item creation.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: <a  href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an enumerator to iterate the routes though <code>for..in</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewPattern"></span><code>function <b>NewPattern</b>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Generates a new route pattern.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <b>Add</b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a new item to the routes list. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Route item.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="First"></span><code>function <b>First</b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the <code>first</code> route in the routes list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Last"></span><code>function <b>Last</b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the <code>last</code> route in the routes list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOf"></span><code>function <b>IndexOf</b>(const APattern: string): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the route index by its pattern.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Find"></span><code>function <b>Find</b>(const APattern: string): <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Finds a route in the routes list by its pattern. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APattern[in]</dt>
+<dd>Route name.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindDefault"></span><code>function <b>FindDefault</b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Finds a default route in the routes list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>function <b>Remove</b>(const APattern: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Removes a route from the routes list by its pattern. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APattern[in]</dt>
+<dd>Route name.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clears the routes list.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[AIndex:Integer]: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
+      write SetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets/sets a route from/to the routes list by its index.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

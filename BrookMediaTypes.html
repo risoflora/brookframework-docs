@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookMediaTypes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<h1 class="unit">Unit BrookMediaTypes</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Contains classes for media types parsing.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>Classes</li><li>libsagui</li><li><a  href="BrookExtra.html">BrookExtra</a></li><li><a  href="BrookReader.html">BrookReader</a></li><li><a  href="BrookHandledClasses.html">BrookHandledClasses</a></li><li><a  href="BrookStringMap.html">BrookStringMap</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.EBrookMediaTypes.html"><code>EBrookMediaTypes</code></a></td>
+<td class="itemdesc">Handles exceptions related to media type classes.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypes.html"><code>TBrookMediaTypes</code></a></td>
+<td class="itemdesc">Cached abstract class to register, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Add">add</a>, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Remove">remove</a>, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Find">find</a> a media type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesParser.html"><code>TBrookMediaTypesParser</code></a></td>
+<td class="itemdesc">Base class containing a basic media <a class="normal" href="BrookMediaTypes.TBrookMediaTypesParser.html#Types">types</a> parser.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesParserNginx.html"><code>TBrookMediaTypesParserNginx</code></a></td>
+<td class="itemdesc">Media <a class="normal" href="BrookMediaTypes.TBrookMediaTypesParser.html#Types">types</a> parser for <a href="https://github.com/nginx/nginx/blob/master/conf/mime.types">Nginx mime.types</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesPath.html"><code>TBrookMediaTypesPath</code></a></td>
+<td class="itemdesc">Media types provider from the <code>mime.types</code> file.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesApache.html"><code>TBrookMediaTypesApache</code></a></td>
+<td class="itemdesc">Media types provider from the <a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types">Apache mime.types</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesNginx.html"><code>TBrookMediaTypesNginx</code></a></td>
+<td class="itemdesc">Media types provider from the <a href="https://github.com/nginx/nginx/blob/master/conf/mime.types">Nginx mime.types</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesWindows.html"><code>TBrookMediaTypesWindows</code></a></td>
+<td class="itemdesc">Media types provider from the Windows registry.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMediaTypesUnix.html"><code>TBrookMediaTypesUnix</code></a></td>
+<td class="itemdesc">Media types provider from the <code>/etc/mime.types</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookMediaTypes.TBrookMIME.html"><code>TBrookMIME</code></a></td>
+<td class="itemdesc">Provides all registered media <a class="normal" href="BrookMediaTypes.TBrookMIME.html#Types">types</a> in any supported platform.</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#TBrookMediaTypesClass">TBrookMediaTypesClass</a></b> = class of <a  href="BrookMediaTypes.TBrookMediaTypes.html">TBrookMediaTypes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#TBrookMediaTypesPathClass">TBrookMediaTypesPathClass</a></b> = class of <a  href="BrookMediaTypes.TBrookMediaTypesPath.html">TBrookMediaTypesPath</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#BROOK_MIME_FILE">BROOK_MIME_FILE</a></b> = 'mime.types';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#BROOK_MIME_TAG">BROOK_MIME_TAG</a></b> = 'BrookMIME_';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#BROOK_MIME_PROVIDER">BROOK_MIME_PROVIDER</a></b> =
+
+    'Windows'
+
+    'Unix'
+;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookInvalidMediaType">SBrookInvalidMediaType</a></b> = 'Invalid media type: %s.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookInvalidMediaExt">SBrookInvalidMediaExt</a></b> = 'Invalid media extension: %s.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookEmptyMediaType">SBrookEmptyMediaType</a></b> = 'Empty media type.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookEmptyMediaExt">SBrookEmptyMediaExt</a></b> = 'Empty media extension.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookActiveMIMETypes">SBrookActiveMIMETypes</a></b> = 'Active MIME types.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookInactiveMIMETypes">SBrookInactiveMIMETypes</a></b> = 'Inactive MIME types.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookEmptyMIMEProvider">SBrookEmptyMIMEProvider</a></b> = 'Empty MIME provider.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookInvalidMIMEProviderClass">SBrookInvalidMIMEProviderClass</a></b> = 'Invalid MIME provider class: %s.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMediaTypes.html#SBrookUnknownMIMEProvider">SBrookUnknownMIMEProvider</a></b> = 'Unknown MIME provider: %s.';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookMediaTypesClass"></span><code><b>TBrookMediaTypesClass</b> = class of <a  href="BrookMediaTypes.TBrookMediaTypes.html">TBrookMediaTypes</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class-reference for <code><a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html">TBrookMediaTypes</a></code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookMediaTypesPathClass"></span><code><b>TBrookMediaTypesPathClass</b> = class of <a  href="BrookMediaTypes.TBrookMediaTypesPath.html">TBrookMediaTypesPath</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class-reference for <code><a class="normal" href="BrookMediaTypes.TBrookMediaTypesPath.html">TBrookMediaTypesPath</a></code>.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_MIME_FILE"></span><code><b>BROOK_MIME_FILE</b> = 'mime.types';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default MIME types file name.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_MIME_TAG"></span><code><b>BROOK_MIME_TAG</b> = 'BrookMIME_';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Register prefix for MIME types class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_MIME_PROVIDER"></span><code><b>BROOK_MIME_PROVIDER</b> =
+
+    'Windows'
+
+    'Unix'
+;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default MIME provider.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidMediaType"></span><code><b>SBrookInvalidMediaType</b> = 'Invalid media type: %s.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Invalid media type: &lt;media-type&gt;.'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidMediaExt"></span><code><b>SBrookInvalidMediaExt</b> = 'Invalid media extension: %s.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Invalid media extension: &lt;ext&gt;.'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyMediaType"></span><code><b>SBrookEmptyMediaType</b> = 'Empty media type.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Empty media type'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyMediaExt"></span><code><b>SBrookEmptyMediaExt</b> = 'Empty media extension.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Empty media extension'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookActiveMIMETypes"></span><code><b>SBrookActiveMIMETypes</b> = 'Active MIME types.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Active MIME types'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInactiveMIMETypes"></span><code><b>SBrookInactiveMIMETypes</b> = 'Inactive MIME types.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Inactive MIME types'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyMIMEProvider"></span><code><b>SBrookEmptyMIMEProvider</b> = 'Empty MIME provider.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Empty MIME provider'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidMIMEProviderClass"></span><code><b>SBrookInvalidMIMEProviderClass</b> = 'Invalid MIME provider class: %s.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Invalid MIME provider class: &lt;class-name&gt;.'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookUnknownMIMEProvider"></span><code><b>SBrookUnknownMIMEProvider</b> = 'Unknown MIME provider: %s.';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error message <code>'Unknown MIME provider: &lt;unknown-mime&gt;.'</code>.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

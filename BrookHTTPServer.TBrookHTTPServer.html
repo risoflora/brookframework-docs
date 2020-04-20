@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookHTTPServer: Class TBrookHTTPServer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="TBrookHTTPServer"></span><h1 class="cio">Class TBrookHTTPServer</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookHTTPServer.html">BrookHTTPServer</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookHTTPServer = class(<a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Fast event-driven HTTP(S) server class.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a></li>
+<li class="thisitem">TBrookHTTPServer</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Open">Open</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Close">Close</a></b>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Active">Active</a></b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Authenticated">Authenticated</a></b>: Boolean read FAuthenticated write SetAuthenticated
+      stored IsAuthenticatedStored;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Port">Port</a></b>: UInt16 read GetPort write SetPort stored IsPortStored
+      default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Threaded">Threaded</a></b>: Boolean read GetThreaded write SetThreaded
+      stored IsThreadedStored default False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#UploadsDir">UploadsDir</a></b>: string read GetUploadsDir write SetUploadsDir
+      stored IsUploadsDirStored;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#PostBufferSize">PostBufferSize</a></b>: NativeUInt read GetPostBufferSize
+      write SetPostBufferSize stored IsPostBufferSizeStored
+      default <a  href="BrookExtra.html#BROOK_POST_BUFFER_SIZE">BROOK_POST_BUFFER_SIZE</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#PayloadLimit">PayloadLimit</a></b>: NativeUInt read GetPayloadLimit write SetPayloadLimit
+      stored IsPayloadLimitStored default <a  href="BrookExtra.html#BROOK_PAYLOAD_LIMIT">BROOK_PAYLOAD_LIMIT</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#UploadsLimit">UploadsLimit</a></b>: UInt64 read GetUploadsLimit write SetUploadsLimit
+      stored IsUploadsLimitStored default <a  href="BrookExtra.html#BROOK_UPLOADS_LIMIT">BROOK_UPLOADS_LIMIT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#ThreadPoolSize">ThreadPoolSize</a></b>: Cardinal read GetThreadPoolSize
+      write SetThreadPoolSize stored IsThreadPoolSizeStored default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#ConnectionTimeout">ConnectionTimeout</a></b>: Cardinal read GetConnectionTimeout
+      write SetConnectionTimeout stored IsConnectionTimeoutStored default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#ConnectionLimit">ConnectionLimit</a></b>: Cardinal read GetConnectionLimit
+      write SetConnectionLimit stored IsConnectionLimitStored default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#NoFavicon">NoFavicon</a></b>: Boolean read FNoFavicon write FNoFavicon
+      stored IsNoFaviconStored default False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#Security">Security</a></b>: <a  href="BrookHTTPServer.TBrookHTTPServerSecurity.html">TBrookHTTPServerSecurity</a> read FSecurity
+      write SetSecurity;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnAuthenticate">OnAuthenticate</a></b>: <a  href="BrookHTTPServer.html#TBrookHTTPAuthenticateEvent">TBrookHTTPAuthenticateEvent</a> read FOnAuthenticate
+      write FOnAuthenticate;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnAuthenticateError">OnAuthenticateError</a></b>: <a  href="BrookHTTPServer.html#TBrookHTTPAuthenticateErrorEvent">TBrookHTTPAuthenticateErrorEvent</a>
+      read FOnAuthenticateError write FOnAuthenticateError;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnRequest">OnRequest</a></b>: <a  href="BrookHTTPServer.html#TBrookHTTPRequestEvent">TBrookHTTPRequestEvent</a> read FOnRequest write FOnRequest;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnRequestError">OnRequestError</a></b>: <a  href="BrookHTTPServer.html#TBrookHTTPRequestErrorEvent">TBrookHTTPRequestErrorEvent</a> read FOnRequestError
+      write FOnRequestError;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnClientConnection">OnClientConnection</a></b>: <a  href="BrookHTTPServer.html#TBrookHTTPServerClientConnectionEvent">TBrookHTTPServerClientConnectionEvent</a>
+      read FOnClientConnection write FOnClientConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnError">OnError</a></b>: <a  href="BrookUtility.html#TBrookErrorEvent">TBrookErrorEvent</a> read FOnError write FOnError;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnStart">OnStart</a></b>: TNotifyEvent read FOnStart write FOnStart;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPServer.TBrookHTTPServer.html#OnStop">OnStop</a></b>: TNotifyEvent read FOnStop write FOnStop;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code><a class="normal" href="BrookHTTPServer.TBrookHTTPServer.html">TBrookHTTPServer</a></code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOwner[in]</dt>
+<dd>Owner component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys an instance of <code><a class="normal" href="BrookHTTPServer.TBrookHTTPServer.html">TBrookHTTPServer</a></code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Open"></span><code>procedure <b>Open</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Starts the HTTP(S) server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Close"></span><code>procedure <b>Close</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Stops the HTTP(S) server.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <b>Active</b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Activates the HTTP(S) server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Authenticated"></span><code>property <b>Authenticated</b>: Boolean read FAuthenticated write SetAuthenticated
+      stored IsAuthenticatedStored;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enables/disables the basic HTTP authentication.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Port"></span><code>property <b>Port</b>: UInt16 read GetPort write SetPort stored IsPortStored
+      default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Port</code> for listening to connections.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Threaded"></span><code>property <b>Threaded</b>: Boolean read GetThreaded write SetThreaded
+      stored IsThreadedStored default False;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enables/disables the <code>threaded</code> model. If <code>True</code>, the server creates one thread per connection.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="UploadsDir"></span><code>property <b>UploadsDir</b>: string read GetUploadsDir write SetUploadsDir
+      stored IsUploadsDirStored;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Directory to store the uploaded files.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="PostBufferSize"></span><code>property <b>PostBufferSize</b>: NativeUInt read GetPostBufferSize
+      write SetPostBufferSize stored IsPostBufferSizeStored
+      default <a  href="BrookExtra.html#BROOK_POST_BUFFER_SIZE">BROOK_POST_BUFFER_SIZE</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Post buffering size.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="PayloadLimit"></span><code>property <b>PayloadLimit</b>: NativeUInt read GetPayloadLimit write SetPayloadLimit
+      stored IsPayloadLimitStored default <a  href="BrookExtra.html#BROOK_PAYLOAD_LIMIT">BROOK_PAYLOAD_LIMIT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Total payload limit. Use zero for no limit.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="UploadsLimit"></span><code>property <b>UploadsLimit</b>: UInt64 read GetUploadsLimit write SetUploadsLimit
+      stored IsUploadsLimitStored default <a  href="BrookExtra.html#BROOK_UPLOADS_LIMIT">BROOK_UPLOADS_LIMIT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Total uploads limit. Use zero for no limit.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="ThreadPoolSize"></span><code>property <b>ThreadPoolSize</b>: Cardinal read GetThreadPoolSize
+      write SetThreadPoolSize stored IsThreadPoolSizeStored default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Thread pool size. Size greater than 1 enables the thread pooling.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="ConnectionTimeout"></span><code>property <b>ConnectionTimeout</b>: Cardinal read GetConnectionTimeout
+      write SetConnectionTimeout stored IsConnectionTimeoutStored default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Inactivity time (in seconds) to a client get time out.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="ConnectionLimit"></span><code>property <b>ConnectionLimit</b>: Cardinal read GetConnectionLimit
+      write SetConnectionLimit stored IsConnectionLimitStored default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Concurrent connections limit. Use zero for no limit.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="NoFavicon"></span><code>property <b>NoFavicon</b>: Boolean read FNoFavicon write FNoFavicon
+      stored IsNoFaviconStored default False;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enables/disables the favicon handling. If <code>True</code>, it avoids <code>404</code> errors by sending an empty content (<code>204</code>) if path is <code>'/favicon.ico'</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Security"></span><code>property <b>Security</b>: <a  href="BrookHTTPServer.TBrookHTTPServerSecurity.html">TBrookHTTPServerSecurity</a> read FSecurity
+      write SetSecurity;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Holds the TLS properties for the HTTPS server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnAuthenticate"></span><code>property <b>OnAuthenticate</b>: <a  href="BrookHTTPServer.html#TBrookHTTPAuthenticateEvent">TBrookHTTPAuthenticateEvent</a> read FOnAuthenticate
+      write FOnAuthenticate;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client requests authentication.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnAuthenticateError"></span><code>property <b>OnAuthenticateError</b>: <a  href="BrookHTTPServer.html#TBrookHTTPAuthenticateErrorEvent">TBrookHTTPAuthenticateErrorEvent</a>
+      read FOnAuthenticateError write FOnAuthenticateError;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client authentication raises errors.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnRequest"></span><code>property <b>OnRequest</b>: <a  href="BrookHTTPServer.html#TBrookHTTPRequestEvent">TBrookHTTPRequestEvent</a> read FOnRequest write FOnRequest;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client requests a content.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnRequestError"></span><code>property <b>OnRequestError</b>: <a  href="BrookHTTPServer.html#TBrookHTTPRequestErrorEvent">TBrookHTTPRequestErrorEvent</a> read FOnRequestError
+      write FOnRequestError;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client request raises errors.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnClientConnection"></span><code>property <b>OnClientConnection</b>: <a  href="BrookHTTPServer.html#TBrookHTTPServerClientConnectionEvent">TBrookHTTPServerClientConnectionEvent</a>
+      read FOnClientConnection write FOnClientConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when a client connects to or disconnects from the server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnError"></span><code>property <b>OnError</b>: <a  href="BrookUtility.html#TBrookErrorEvent">TBrookErrorEvent</a> read FOnError write FOnError;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when the HTTP server raises errors.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnStart"></span><code>property <b>OnStart</b>: TNotifyEvent read FOnStart write FOnStart;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when the HTTP server starts successfully.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnStop"></span><code>property <b>OnStop</b>: TNotifyEvent read FOnStop write FOnStop;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event triggered when the HTTP server stops successfully.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

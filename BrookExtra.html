@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookExtra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<h1 class="unit">Unit BrookExtra</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section">Functions and Procedures</div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Contains useful extra types for the framework.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_POST_BUFFER_SIZE">BROOK_POST_BUFFER_SIZE</a></b> = 4096;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_PAYLOAD_LIMIT">BROOK_PAYLOAD_LIMIT</a></b> = 4194304;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_UPLOADS_LIMIT">BROOK_UPLOADS_LIMIT</a></b> = 67108864;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_MIN_BUFFER_SIZE">BROOK_MIN_BUFFER_SIZE</a></b> = 128;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_BUFFER_SIZE">BROOK_BUFFER_SIZE</a></b> = 4096;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_FILE_RIGHTS">BROOK_FILE_RIGHTS</a></b> = 438;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_CT_TEXT_PLAIN">BROOK_CT_TEXT_PLAIN</a></b> = 'text/plain; charset=utf-8';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookExtra.html#BROOK_CT_OCTET_STREAM">BROOK_CT_OCTET_STREAM</a></b> = 'application/octet-stream';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_POST_BUFFER_SIZE"></span><code><b>BROOK_POST_BUFFER_SIZE</b> = 4096;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default post buffer size (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_PAYLOAD_LIMIT"></span><code><b>BROOK_PAYLOAD_LIMIT</b> = 4194304;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default payload limit (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_UPLOADS_LIMIT"></span><code><b>BROOK_UPLOADS_LIMIT</b> = 67108864;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default upload(s) limit (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_MIN_BUFFER_SIZE"></span><code><b>BROOK_MIN_BUFFER_SIZE</b> = 128;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default minimal buffer size (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_BUFFER_SIZE"></span><code><b>BROOK_BUFFER_SIZE</b> = 4096;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default buffer size (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_FILE_RIGHTS"></span><code><b>BROOK_FILE_RIGHTS</b> = 438;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default file rights (under Unix, 438 = &amp;666 = owner/group/others can read/write).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_CT_TEXT_PLAIN"></span><code><b>BROOK_CT_TEXT_PLAIN</b> = 'text/plain; charset=utf-8';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default content type for text content (text/plain in UTF-8).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_CT_OCTET_STREAM"></span><code><b>BROOK_CT_OCTET_STREAM</b> = 'application/octet-stream';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default content type for binary content (octet-stream).</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

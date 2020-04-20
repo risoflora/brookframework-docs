@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brook Tardigrade: BrookHTTPResponse: Class TBrookHTTPResponse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</td><td class="content">
+<span id="TBrookHTTPResponse"></span><h1 class="cio">Class TBrookHTTPResponse</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookHTTPResponse.html">BrookHTTPResponse</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookHTTPResponse = class(<a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class which dispatches <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">headers</a>, contents, binaries, files and other data to the client.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a></li>
+<li class="thisitem">TBrookHTTPResponse</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Create">Create</a></b>(AHandle: Pointer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SetCookie">SetCookie</a></b>(const AName, AValue: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Send">Send</a></b>(const AValue, AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendFmt">SendFmt</a></b>(const AFormat: string; const AArgs: array of const; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendBinary">SendBinary</a></b>(ABuffer: Pointer; ASize: NativeUInt; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendBytes">SendBytes</a></b>(const ABytes: TBytes; ASize: NativeUInt; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendFile">SendFile</a></b>(ASize: NativeUInt; AMaxSize, AOffset: UInt64; const AFileName: TFileName; ADownloaded: Boolean; AStatus: Word); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendStream">SendStream</a></b>(AStream: TStream; AFreed: Boolean; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendStream">SendStream</a></b>(AStream: TStream; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendEmpty">SendEmpty</a></b>(const AContentType: string); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendEmpty">SendEmpty</a></b>; overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendAndRedirect">SendAndRedirect</a></b>(const AValue, ADestination, AContentType: string; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#SendAndRedirect">SendAndRedirect</a></b>(const AValue, ADestination, AContentType: string); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">Download</a></b>(const AFileName: TFileName); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Render">Render</a></b>(const AFileName: TFileName); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Clear">Clear</a></b>; virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Compressed">Compressed</a></b>: Boolean read FCompressed write FCompressed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">Headers</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FHeaders;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Cookies">Cookies</a></b>: <a  href="BrookHTTPCookies.TBrookHTTPCookies.html">TBrookHTTPCookies</a> read FCookies write SetCookies;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AHandle: Pointer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code><a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a></code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AHandle[in]</dt>
+<dd>Request <a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frees an instance of <code><a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a></code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCookie"></span><code>procedure <b>SetCookie</b>(const AName, AValue: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets server cookie to the response <a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html#Handle">handle</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AName[in]</dt>
+<dd>Cookie name.</dd>
+<dt>AValue[in]</dt>
+<dd>Cookie value.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Send"></span><code>procedure <b>Send</b>(const AValue, AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a string content to the client.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValue[in]</dt>
+<dd>String to be sent.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendFmt"></span><code>procedure <b>SendFmt</b>(const AFormat: string; const AArgs: array of const; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a formatted string content to the client.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFmt[in]</dt>
+<dd>Format string.</dd>
+<dt>AArgs[in]</dt>
+<dd>Arguments to compose the formatted string.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendBinary"></span><code>procedure <b>SendBinary</b>(ABuffer: Pointer; ASize: NativeUInt; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a binary content to the client.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ABinary[in]</dt>
+<dd>Binary content to be sent.</dd>
+<dt>ASize[in]</dt>
+<dd>Content size.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendBytes"></span><code>procedure <b>SendBytes</b>(const ABytes: TBytes; ASize: NativeUInt; const AContentType: string; AStatus: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends an array of Bytes content to the client.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ABytes[in]</dt>
+<dd>Array of Bytes to be sent.</dd>
+<dt>ASize[in]</dt>
+<dd>Content size.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendFile"></span><code>procedure <b>SendFile</b>(ASize: NativeUInt; AMaxSize, AOffset: UInt64; const AFileName: TFileName; ADownloaded: Boolean; AStatus: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a file to the client.      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ASize[in]</dt>
+<dd>Size of the file to be sent. Use zero to calculate automatically.</dd>
+<dt>AMaxSize[in]</dt>
+<dd>Maximum allowed file size. Use zero for no limit.</dd>
+<dt>AOffset[in]</dt>
+<dd>Offset to start reading from in the file to be sent.</dd>
+<dt>AFileName[in]</dt>
+<dd>Path of the file to be sent.</dd>
+<dt>ADownloaded[in]</dt>
+<dd>If <code>True</code> it offer the file as <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">download</a>.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendStream"></span><code>procedure <b>SendStream</b>(AStream: TStream; AFreed: Boolean; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a stream to the client.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AStream[in]</dt>
+<dd>Stream to be sent.</dd>
+<dt>AFreed[in]</dt>
+<dd><code>True</code> frees the stream automatically as soon as it is sent.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendStream"></span><code>procedure <b>SendStream</b>(AStream: TStream; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a stream to the client. The stream is freed automatically as soon as it is sent.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AStream[in]</dt>
+<dd>Stream to be sent.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendEmpty"></span><code>procedure <b>SendEmpty</b>(const AContentType: string); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends an HTTP status 204 to the client indicating the server has fulfilled the request, but does not need to return a content. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendEmpty"></span><code>procedure <b>SendEmpty</b>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends an HTTP status 204 to the client indicating the server has fulfilled the request, but does not need to return a content.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendAndRedirect"></span><code>procedure <b>SendAndRedirect</b>(const AValue, ADestination, AContentType: string; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a string content to the client and redirects it to a new location.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValue[in]</dt>
+<dd>String to be sent.</dd>
+<dt>ADestination[in]</dt>
+<dd>Destination to which it will be redirected as soon as the content is sent.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code (must be &gt;=300 and &lt;=307).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SendAndRedirect"></span><code>procedure <b>SendAndRedirect</b>(const AValue, ADestination, AContentType: string); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a string content to the client with HTTP status 302 and redirects it to a new location.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValue[in]</dt>
+<dd>String to be sent.</dd>
+<dt>ADestination[in]</dt>
+<dd>Destination to which it will be redirected as soon as the content is sent.</dd>
+<dt>AContentType[in]</dt>
+<dd>Content type.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Download"></span><code>procedure <b>Download</b>(const AFileName: TFileName); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Offer a file as <code>download</code>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFileName[in]</dt>
+<dd>Path of the file to be sent.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a file to be rendered. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFileName[in]</dt>
+<dd>Path of the file to be sent.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clears all <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">headers</a>, <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Cookies">cookies</a>, statuses and internal buffers of the response object.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Compressed"></span><code>property <b>Compressed</b>: Boolean read FCompressed write FCompressed;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Determines if the content must be <code>compressed</code> while sending. The compression is done by ZLib library using the DEFLATE compression algorithm. It uses the Gzip format when the content is a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Headers"></span><code>property <b>Headers</b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FHeaders;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Hash table containing the <code>headers</code> to be sent to the client.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Cookies"></span><code>property <b>Cookies</b>: <a  href="BrookHTTPCookies.TBrookHTTPCookies.html">TBrookHTTPCookies</a> read FCookies write SetCookies;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Cookies</code> to be sent to the client.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>
