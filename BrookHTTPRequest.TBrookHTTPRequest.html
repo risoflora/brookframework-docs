@@ -72,68 +72,80 @@ Class which provides <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#IsXhr">IsXhr</a></b>: Boolean; inline;</code></td>
 </tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Isolate">Isolate</a></b>(AProc: <a  href="BrookHTTPRequest.html#TBrookHTTPRequestIsolatedProc">TBrookHTTPRequestIsolatedProc</a>; AUserData: Pointer = nil); virtual;</code></td>
+</tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Headers">Headers</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FHeaders;</code></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#ServerHandle">ServerHandle</a></b>: Pointer read FServerHandle;</code></td>
 </tr>
 <tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Headers">Headers</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FHeaders;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Cookies">Cookies</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FCookies;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Params">Params</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FParams;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Fields">Fields</a></b>: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a> read FFields;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Payload">Payload</a></b>: <a  href="BrookString.TBrookString.html">TBrookString</a> read FPayload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Version">Version</a></b>: string read FVersion;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Method">Method</a></b>: string read FMethod;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Path">Path</a></b>: string read FPath;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#IP">IP</a></b>: string read GetIP;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#ContentType">ContentType</a></b>: string read GetContentType;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#UserAgent">UserAgent</a></b>: string read GetUserAgent;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Referer">Referer</a></b>: string read GetReferer;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Paths">Paths</a></b>: TArray&lt;string&gt; read GetPaths;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#IsUploading">IsUploading</a></b>: Boolean read FIsUploading;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Uploads">Uploads</a></b>: <a  href="BrookHTTPUploads.TBrookHTTPUploads.html">TBrookHTTPUploads</a> read FUploads;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHTTPRequest.TBrookHTTPRequest.html#Files">Files</a></b>: <a  href="BrookHTTPUploads.TBrookHTTPUploads.html">TBrookHTTPUploads</a> read FUploads;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -225,7 +237,34 @@ Checks if the HTTP <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.ht
 Checks if the request was done by an Ajax <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.html#Client">client</a>.</p>
 </td></tr>
 </table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Isolate"></span><code>procedure <b>Isolate</b>(AProc: <a  href="BrookHTTPRequest.html#TBrookHTTPRequestIsolatedProc">TBrookHTTPRequestIsolatedProc</a>; AUserData: Pointer = nil); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Isolates a request from the main event loop to an own dedicated thread, bringing it back when the request finishes.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AProc[in]</dt>
+<dd>Procedure to <a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html#Handle">handle</a> requests and responses isolated from the main event loop.</dd>
+<dt>AUserData[in]</dt>
+<dd>User-defined data.</dd>
+</dl>
+</td></tr>
+</table>
 <h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ServerHandle"></span><code>property <b>ServerHandle</b>: Pointer read FServerHandle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reference to the server instance.</p>
+</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -373,7 +412,17 @@ Checks if the <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.html#Cl
 </tr>
 <tr><td colspan="2">
 <p>
-List of the uploaded files.</p>
+List of the uploaded <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.html#Files">files</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Files"></span><code>property <b>Files</b>: <a  href="BrookHTTPUploads.TBrookHTTPUploads.html">TBrookHTTPUploads</a> read FUploads;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of the uploaded <code>files</code>. This is an alias to property <code><a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.html#Uploads">Uploads</a></code>.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

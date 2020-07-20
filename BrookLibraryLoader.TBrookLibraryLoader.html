@@ -73,9 +73,13 @@ Class for dynamic library loading.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookLibraryLoader.TBrookLibraryLoader.html#Open">Open</a></b>; virtual;</code></td>
+<td class="itemcode"><code>class function <b><a  href="BrookLibraryLoader.TBrookLibraryLoader.html#IsLoaded">IsLoaded</a></b>: Boolean; static;</code></td>
 </tr>
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLibraryLoader.TBrookLibraryLoader.html#Open">Open</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="BrookLibraryLoader.TBrookLibraryLoader.html#Close">Close</a></b>; virtual;</code></td>
 </tr>
@@ -175,6 +179,16 @@ Loads the library dynamically.</p>
 <tr><td colspan="2">
 <p>
 Unloads the library dynamically.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsLoaded"></span><code>class function <b>IsLoaded</b>: Boolean; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if the library is already loaded.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

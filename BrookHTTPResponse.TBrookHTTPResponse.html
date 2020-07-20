@@ -102,11 +102,19 @@ Class which dispatches <a class="normal" href="BrookHTTPResponse.TBrookHTTPRespo
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">Download</a></b>(const AFileName: TFileName); virtual;</code></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">Download</a></b>(const AFileName: TFileName; AStatus: Word); overload; virtual;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Render">Render</a></b>(const AFileName: TFileName); virtual;</code></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Render">Render</a></b>(const AFileName: TFileName; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">Download</a></b>(const AFileName: TFileName); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHTTPResponse.TBrookHTTPResponse.html#Render">Render</a></b>(const AFileName: TFileName); overload; virtual;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -273,7 +281,7 @@ Sends a file to the client.      </p>
 <dt>AFileName[in]</dt>
 <dd>Path of the file to be sent.</dd>
 <dt>ADownloaded[in]</dt>
-<dd>If <code>True</code> it offer the file as <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">download</a>.</dd>
+<dd>If <code>True</code> it offers the file as <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">download</a>.</dd>
 <dt>AStatus[in]</dt>
 <dd>HTTP status code.</dd>
 </dl>
@@ -383,11 +391,45 @@ Sends a string content to the client with HTTP status 302 and redirects it to a 
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Download"></span><code>procedure <b>Download</b>(const AFileName: TFileName); virtual;</code></td>
+<td class="itemcode"><span id="Download"></span><code>procedure <b>Download</b>(const AFileName: TFileName; AStatus: Word); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Offer a file as <code>download</code>. </p>
+Offers a file as <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Download">download</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFileName[in]</dt>
+<dd>Path of the file to be sent.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName; AStatus: Word); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends a file to be rendered.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFileName[in]</dt>
+<dd>Path of the file to be sent.</dd>
+<dt>AStatus[in]</dt>
+<dd>HTTP status code.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Download"></span><code>procedure <b>Download</b>(const AFileName: TFileName); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Offers a file as <code>download</code>. </p>
 <h6 class="description_section">Parameters</h6>
 <dl class="parameters">
 <dt>AFileName[in]</dt>
@@ -398,7 +440,7 @@ Offer a file as <code>download</code>. </p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName); virtual;</code></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -428,7 +470,7 @@ Clears all <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Hea
 </tr>
 <tr><td colspan="2">
 <p>
-Determines if the content must be <code>compressed</code> while sending. The compression is done by ZLib library using the DEFLATE compression algorithm. It uses the Gzip format when the content is a file.</p>
+Determines if the content must be <code>compressed</code> while sending. The compression is done by the ZLib library using the DEFLATE compression algorithm. It uses the Gzip format when the content is a file.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

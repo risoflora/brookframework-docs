@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Brook Tardigrade: BrookStringMap: Packed Record TBrookStringPair</title>
+<title>Brook Tardigrade: BrookMathExpression: Packed Record TBrookMathExpressionExtension</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="PasDoc 0.15.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -26,69 +26,93 @@ $(document).ready(function() {
 });
 </script>
 </td><td class="content">
-<span id="TBrookStringPair"></span><h1 class="cio">Packed Record TBrookStringPair</h1>
+<span id="TBrookMathExpressionExtension"></span><h1 class="cio">Packed Record TBrookMathExpressionExtension</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookStringMap.html">BrookStringMap</a></p>
+<a  href="BrookMathExpression.html">BrookMathExpression</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
-<code>type TBrookStringPair = packed record</code></p>
+<code>type TBrookMathExpressionExtension = packed record</code></p>
 <h2 class="description">Description</h2>
 <p>
-Pair item of <code><a class="normal" href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a></code>.</p>
+Structured type which holds the properties of a math expression extension.</p>
 <h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>constructor <b><a  href="BrookStringMap.TBrookStringPair.html#Create">Create</a></b>(const AName, AValue: string);</code></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookMathExpression.TBrookMathExpressionExtension.html#Create">Create</a></b>(AHandle: Pointer; const AIdent: MarshaledAString);</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringPair.html#Name">Name</a></b>: string read FName;</code></td>
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionExtension.html#HasArgs">HasArgs</a></b>: Boolean read GetHasArgs;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringPair.html#Value">Value</a></b>: string read FValue;</code></td>
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionExtension.html#Args">Args</a></b>[AIndex:Integer]: Double read GetArg;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionExtension.html#Ident">Ident</a></b>: string read GetIdent;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionExtension.html#Handle">Handle</a></b>: Pointer read GetHandle;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(const AName, AValue: string);</code></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AHandle: Pointer; const AIdent: MarshaledAString);</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-Initializes a variable of <code><a class="normal" href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a></code>.  </p>
+Creates an instance of <code><a class="normal" href="BrookMathExpression.TBrookMathExpressionExtension.html">TBrookMathExpressionExtension</a></code>.  </p>
 <h6 class="description_section">Parameters</h6>
 <dl class="parameters">
-<dt>AName[in]</dt>
-<dd><a class="normal" href="BrookStringMap.TBrookStringPair.html#Name">Name</a> of the pair.</dd>
-<dt>AValue[in]</dt>
-<dd><a class="normal" href="BrookStringMap.TBrookStringPair.html#Value">Value</a> of the pair.</dd>
+<dt>AHandle[in]</dt>
+<dd>Math expression extension <a class="normal" href="BrookMathExpression.TBrookMathExpressionExtension.html#Handle">handle</a>.</dd>
+<dt>AIdent[in]</dt>
+<dd>Function identifier.</dd>
 </dl>
 </td></tr>
 </table>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Name"></span><code>property <b>Name</b>: string read FName;</code></td>
+<td class="itemcode"><span id="HasArgs"></span><code>property <b>HasArgs</b>: Boolean read GetHasArgs;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-<code>Name</code> of the pair.</p>
+Indicates that extension contains arguments.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Value"></span><code>property <b>Value</b>: string read FValue;</code></td>
+<td class="itemcode"><span id="Args"></span><code>property <b>Args</b>[AIndex:Integer]: Double read GetArg;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-<code>Value</code> of the pair.</p>
+Function argument by its index.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Ident"></span><code>property <b>Ident</b>: string read GetIdent;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function identifier.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Handle"></span><code>property <b>Handle</b>: Pointer read GetHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Extension <code>handle</code>.</p>
 </td></tr>
 </table>
 <hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>

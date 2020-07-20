@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Brook Tardigrade: BrookStringMap: Packed Record TBrookStringPair</title>
+<title>Brook Tardigrade: BrookMathExpression: Packed Record TBrookMathExpressionError</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="PasDoc 0.15.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -26,69 +26,91 @@ $(document).ready(function() {
 });
 </script>
 </td><td class="content">
-<span id="TBrookStringPair"></span><h1 class="cio">Packed Record TBrookStringPair</h1>
+<span id="TBrookMathExpressionError"></span><h1 class="cio">Packed Record TBrookMathExpressionError</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookStringMap.html">BrookStringMap</a></p>
+<a  href="BrookMathExpression.html">BrookMathExpression</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
-<code>type TBrookStringPair = packed record</code></p>
+<code>type TBrookMathExpressionError = packed record</code></p>
 <h2 class="description">Description</h2>
 <p>
-Pair item of <code><a class="normal" href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a></code>.</p>
+Structured type which holds the mathematical expression errors.</p>
 <h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>constructor <b><a  href="BrookStringMap.TBrookStringPair.html#Create">Create</a></b>(const AName, AValue: string);</code></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookMathExpression.TBrookMathExpressionError.html#Create">Create</a></b>(AHandle: Pointer);</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringPair.html#Name">Name</a></b>: string read FName;</code></td>
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionError.html#Near">Near</a></b>: Integer read GetNear;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringPair.html#Value">Value</a></b>: string read FValue;</code></td>
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionError.html#Kind">Kind</a></b>: <a  href="BrookMathExpression.html#TBrookMathExpressionErrorKind">TBrookMathExpressionErrorKind</a> read GetKind;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionError.html#Message">Message</a></b>: string read GetMessage;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpressionError.html#Handle">Handle</a></b>: Pointer read GetHandle;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(const AName, AValue: string);</code></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AHandle: Pointer);</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-Initializes a variable of <code><a class="normal" href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a></code>.  </p>
+Creates an instance of <code><a class="normal" href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a></code>. </p>
 <h6 class="description_section">Parameters</h6>
 <dl class="parameters">
-<dt>AName[in]</dt>
-<dd><a class="normal" href="BrookStringMap.TBrookStringPair.html#Name">Name</a> of the pair.</dd>
-<dt>AValue[in]</dt>
-<dd><a class="normal" href="BrookStringMap.TBrookStringPair.html#Value">Value</a> of the pair.</dd>
+<dt>AHandle[in]</dt>
+<dd>Math expression error <a class="normal" href="BrookMathExpression.TBrookMathExpressionError.html#Handle">handle</a>.</dd>
 </dl>
 </td></tr>
 </table>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Name"></span><code>property <b>Name</b>: string read FName;</code></td>
+<td class="itemcode"><span id="Near"></span><code>property <b>Near</b>: Integer read GetNear;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-<code>Name</code> of the pair.</p>
+Nearby position of an error in the mathematical expression.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Value"></span><code>property <b>Value</b>: string read FValue;</code></td>
+<td class="itemcode"><span id="Kind"></span><code>property <b>Kind</b>: <a  href="BrookMathExpression.html#TBrookMathExpressionErrorKind">TBrookMathExpressionErrorKind</a> read GetKind;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
-<code>Value</code> of the pair.</p>
+<code>Kind</code> of an error in the mathematical expression.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Message"></span><code>property <b>Message</b>: string read GetMessage;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Description of an error in the mathematical expression.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Handle"></span><code>property <b>Handle</b>: Pointer read GetHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Math expression error <code>handle</code>.</p>
 </td></tr>
 </table>
 <hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
