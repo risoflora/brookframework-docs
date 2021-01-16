@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookHTTPCookie"></span><h1 class="cio">Class TBrookHTTPCookie</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookHTTPCookies.html">BrookHTTPCookies</a></p>
+<a href="BrookHTTPCookies.html">BrookHTTPCookies</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookHTTPCookie = class(TCollectionItem)</code></p>
@@ -39,112 +27,114 @@ $(document).ready(function() {
 <p>
 Server side HTTP cookie item.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TCollectionItem</li>
 <li class="thisitem">TBrookHTTPCookie</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Create">Create</a></b>(ACollection: TCollection); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Create">Create</a></strong>(ACollection: TCollection); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Assign">Assign</a></b>(ASource: TPersistent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Assign">Assign</a></strong>(ASource: TPersistent); override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Sign">Sign</a></b>(const ASecret, AUnsignedValue: string): string; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Sign">Sign</a></strong>(const ASecret, AUnsignedValue: string): string; overload; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#TryUnsign">TryUnsign</a></b>(const ASecret, ASignedValue: string; out AUnsignedValue: string): Boolean; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#TryUnsign">TryUnsign</a></strong>(const ASecret, ASignedValue: string; out AUnsignedValue: string): Boolean; overload; static;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">Unsign</a></b>(const ASecret, ASignedValue: string): string; overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">Unsign</a></strong>(const ASecret, ASignedValue: string): string; overload; static; inline;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#IsSigned">IsSigned</a></b>( const ASignedValue: string): Boolean; overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#IsSigned">IsSigned</a></strong>( const ASignedValue: string): Boolean; overload; static; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#IsSigned">IsSigned</a></b>: Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#IsSigned">IsSigned</a></strong>: Boolean; overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Sign">Sign</a></b>(const ASecret: string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Sign">Sign</a></strong>(const ASecret: string); overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#TryUnsign">TryUnsign</a></b>(const ASecret: string): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#TryUnsign">TryUnsign</a></strong>(const ASecret: string): Boolean; overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">Unsign</a></b>(const ASecret: string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">Unsign</a></strong>(const ASecret: string); overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#ToString">ToString</a></b>: string; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#ToString">ToString</a></strong>: string; override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Clear">Clear</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Clear">Clear</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Expire">Expire</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Expire">Expire</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Persist">Persist</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Persist">Persist</a></strong>; virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Name">Name</a></b>: string read FName write SetName;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Name">Name</a></strong>: string read FName write SetName;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Value">Value</a></b>: string read FValue write SetValue;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Value">Value</a></strong>: string read FValue write SetValue;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Domain">Domain</a></b>: string read FDomain write FDomain;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Domain">Domain</a></strong>: string read FDomain write FDomain;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Path">Path</a></b>: string read FPath write SetPath;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Path">Path</a></strong>: string read FPath write SetPath;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Expires">Expires</a></b>: TDateTime read FExpires write FExpires;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Expires">Expires</a></strong>: TDateTime read FExpires write FExpires;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#HttpOnly">HttpOnly</a></b>: Boolean read FHttpOnly write FHttpOnly;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#HttpOnly">HttpOnly</a></strong>: Boolean read FHttpOnly write FHttpOnly;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#Secure">Secure</a></b>: Boolean read FSecure write FSecure;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#Secure">Secure</a></strong>: Boolean read FSecure write FSecure;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#MaxAge">MaxAge</a></b>: Integer read FMaxAge write SetMaxAge;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#MaxAge">MaxAge</a></strong>: Integer read FMaxAge write SetMaxAge;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookHTTPCookies.TBrookHTTPCookie.html#SameSite">SameSite</a></b>: <a  href="BrookHTTPCookies.html#TBrookHTTPCookieSameSite">TBrookHTTPCookieSameSite</a> read FSameSite write FSameSite;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPCookies.TBrookHTTPCookie.html#SameSite">SameSite</a></strong>: <a href="BrookHTTPCookies.html#TBrookHTTPCookieSameSite">TBrookHTTPCookieSameSite</a> read FSameSite write FSameSite;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(ACollection: TCollection); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ACollection: TCollection); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -158,8 +148,8 @@ Creates an instance of <code><a class="normal" href="BrookHTTPCookies.TBrookHTTP
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Assign"></span><code>procedure <b>Assign</b>(ASource: TPersistent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Assign"></span><code>procedure <strong>Assign</strong>(ASource: TPersistent); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -173,8 +163,8 @@ Copies the properties of the source cookie. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Sign"></span><code>class function <b>Sign</b>(const ASecret, AUnsignedValue: string): string; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Sign"></span><code>class function <strong>Sign</strong>(const ASecret, AUnsignedValue: string): string; overload; static;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -191,8 +181,8 @@ Signs a cookie <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html#Va
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TryUnsign"></span><code>class function <b>TryUnsign</b>(const ASecret, ASignedValue: string; out AUnsignedValue: string): Boolean; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TryUnsign"></span><code>class function <strong>TryUnsign</strong>(const ASecret, ASignedValue: string; out AUnsignedValue: string): Boolean; overload; static;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -211,8 +201,8 @@ Tries to <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Unsign"></span><code>class function <b>Unsign</b>(const ASecret, ASignedValue: string): string; overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Unsign"></span><code>class function <strong>Unsign</strong>(const ASecret, ASignedValue: string): string; overload; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -229,8 +219,8 @@ Unsigns a cookie <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html#
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsSigned"></span><code>class function <b>IsSigned</b>( const ASignedValue: string): Boolean; overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsSigned"></span><code>class function <strong>IsSigned</strong>( const ASignedValue: string): Boolean; overload; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -245,8 +235,8 @@ Checks if a cookie <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.htm
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsSigned"></span><code>function <b>IsSigned</b>: Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsSigned"></span><code>function <strong>IsSigned</strong>: Boolean; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -256,8 +246,8 @@ Checks if a cookie is signed. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Sign"></span><code>procedure <b>Sign</b>(const ASecret: string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Sign"></span><code>procedure <strong>Sign</strong>(const ASecret: string); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -271,8 +261,8 @@ Signs a cookie <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html#Va
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TryUnsign"></span><code>function <b>TryUnsign</b>(const ASecret: string): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TryUnsign"></span><code>function <strong>TryUnsign</strong>(const ASecret: string): Boolean; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -287,8 +277,8 @@ Tries to <a class="normal" href="BrookHTTPCookies.TBrookHTTPCookie.html#Unsign">
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Unsign"></span><code>procedure <b>Unsign</b>(const ASecret: string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Unsign"></span><code>procedure <strong>Unsign</strong>(const ASecret: string); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -302,8 +292,8 @@ Unsigns a cookie. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ToString"></span><code>function <b>ToString</b>: string; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToString"></span><code>function <strong>ToString</strong>: string; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -312,8 +302,8 @@ Gets the cookie as string.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -322,8 +312,8 @@ Clears the cookie properties.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Expire"></span><code>procedure <b>Expire</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Expire"></span><code>procedure <strong>Expire</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -332,8 +322,8 @@ Clears the cookie properties.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Persist"></span><code>procedure <b>Persist</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Persist"></span><code>procedure <strong>Persist</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -343,8 +333,8 @@ Persists a cookie to live as long as it can.</p>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Name"></span><code>property <b>Name</b>: string read FName write SetName;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read FName write SetName;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -353,8 +343,8 @@ Cookie <code>name</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Value"></span><code>property <b>Value</b>: string read FValue write SetValue;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Value"></span><code>property <strong>Value</strong>: string read FValue write SetValue;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -363,8 +353,8 @@ Cookie <code>value</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Domain"></span><code>property <b>Domain</b>: string read FDomain write FDomain;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Domain"></span><code>property <strong>Domain</strong>: string read FDomain write FDomain;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -373,8 +363,8 @@ Allowed <code>domain</code> to receive the cookie.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Path"></span><code>property <b>Path</b>: string read FPath write SetPath;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Path"></span><code>property <strong>Path</strong>: string read FPath write SetPath;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -383,8 +373,8 @@ Allowed <code>domain</code> to receive the cookie.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Expires"></span><code>property <b>Expires</b>: TDateTime read FExpires write FExpires;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Expires"></span><code>property <strong>Expires</strong>: TDateTime read FExpires write FExpires;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -393,8 +383,8 @@ Expiration date/time.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="HttpOnly"></span><code>property <b>HttpOnly</b>: Boolean read FHttpOnly write FHttpOnly;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HttpOnly"></span><code>property <strong>HttpOnly</strong>: Boolean read FHttpOnly write FHttpOnly;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -403,8 +393,8 @@ Expiration date/time.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Secure"></span><code>property <b>Secure</b>: Boolean read FSecure write FSecure;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Secure"></span><code>property <strong>Secure</strong>: Boolean read FSecure write FSecure;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -413,8 +403,8 @@ Expiration date/time.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="MaxAge"></span><code>property <b>MaxAge</b>: Integer read FMaxAge write SetMaxAge;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxAge"></span><code>property <strong>MaxAge</strong>: Integer read FMaxAge write SetMaxAge;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -423,14 +413,14 @@ Sets an expiration expressed in number of seconds.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SameSite"></span><code>property <b>SameSite</b>: <a  href="BrookHTTPCookies.html#TBrookHTTPCookieSameSite">TBrookHTTPCookieSameSite</a> read FSameSite write FSameSite;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SameSite"></span><code>property <strong>SameSite</strong>: <a href="BrookHTTPCookies.html#TBrookHTTPCookieSameSite">TBrookHTTPCookieSameSite</a> read FSameSite write FSameSite;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 <code>True</code> indicates that a cookie shouldn't be sent with cross-site requests.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

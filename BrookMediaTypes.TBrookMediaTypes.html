@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookMediaTypes"></span><h1 class="cio">Class TBrookMediaTypes</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookMediaTypes.html">BrookMediaTypes</a></p>
+<a href="BrookMediaTypes.html">BrookMediaTypes</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookMediaTypes = class abstract(<a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a>)</code></p>
@@ -39,93 +27,94 @@ $(document).ready(function() {
 <p>
 Cached abstract class to register, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Add">add</a>, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Remove">remove</a>, <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.html#Find">find</a> a media type.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a></li>
 <li class="thisitem">TBrookMediaTypes</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Create">Create</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Create">Create</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Destroy">Destroy</a></b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#GetRegisterAlias">GetRegisterAlias</a></b>: string; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#GetRegisterAlias">GetRegisterAlias</a></strong>: string; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#GetDescription">GetDescription</a></b>: string; virtual; abstract;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#GetDescription">GetDescription</a></strong>: string; virtual; abstract;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#IsValid">IsValid</a></b>(const AType: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#IsValid">IsValid</a></strong>(const AType: string): Boolean; static; inline;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#IsText">IsText</a></b>(const AType: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#IsText">IsText</a></strong>(const AType: string): Boolean; static; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#IsExt">IsExt</a></b>(const AExt: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#IsExt">IsExt</a></strong>(const AExt: string): Boolean; static; inline;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>class function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#NormalizeExt">NormalizeExt</a></b>(const AExt: string): string; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#NormalizeExt">NormalizeExt</a></strong>(const AExt: string): string; static; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Prepare">Prepare</a></b>; virtual; abstract;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Prepare">Prepare</a></strong>; virtual; abstract;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Add">Add</a></b>(const AExt, AType: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Add">Add</a></strong>(const AExt, AType: string); virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Remove">Remove</a></b>(const AExt: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Remove">Remove</a></strong>(const AExt: string); virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#TryType">TryType</a></b>(const AExt: string; out AType: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#TryType">TryType</a></strong>(const AExt: string; out AType: string): Boolean; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Find">Find</a></b>(const AExt, ADefType: string): string; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Find">Find</a></strong>(const AExt, ADefType: string): string; overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Find">Find</a></b>(const AExt: string): string; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Find">Find</a></strong>(const AExt: string): string; overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Count">Count</a></b>: Integer; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Count">Count</a></strong>: Integer; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Clear">Clear</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Clear">Clear</a></strong>; virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#DefaultType">DefaultType</a></b>: string read FDefaultType write SetDefaultType;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#DefaultType">DefaultType</a></strong>: string read FDefaultType write SetDefaultType;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMediaTypes.TBrookMediaTypes.html#Prepared">Prepared</a></b>: Boolean read IsPrepared;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMediaTypes.TBrookMediaTypes.html#Prepared">Prepared</a></strong>: Boolean read IsPrepared;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -134,8 +123,8 @@ Creates an instance of <code><a class="normal" href="BrookMediaTypes.TBrookMedia
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -144,19 +133,19 @@ Destroys an instance of <code><a class="normal" href="BrookMediaTypes.TBrookMedi
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetRegisterAlias"></span><code>class function <b>GetRegisterAlias</b>: string; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRegisterAlias"></span><code>class function <strong>GetRegisterAlias</strong>: string; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Returns the alias name for class registration. </p>
+Returns the alias name for media type source. </p>
 <h6 class="description_section">Returns</h6>
-<p class="return">Registration alias name.</p></td></tr>
+<p class="return">Media type source alias.</p></td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetDescription"></span><code>class function <b>GetDescription</b>: string; virtual; abstract;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDescription"></span><code>class function <strong>GetDescription</strong>: string; virtual; abstract;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -166,8 +155,8 @@ Returns the description of the media types source. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsValid"></span><code>class function <b>IsValid</b>(const AType: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsValid"></span><code>class function <strong>IsValid</strong>(const AType: string): Boolean; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -182,8 +171,8 @@ Returns <code>True</code> if a string represents a media type, e.g <code>'text/p
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsText"></span><code>class function <b>IsText</b>(const AType: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsText"></span><code>class function <strong>IsText</strong>(const AType: string): Boolean; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -198,8 +187,8 @@ Returns <code>True</code> if a string represents a text media type, e.g. <code>'
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsExt"></span><code>class function <b>IsExt</b>(const AExt: string): Boolean; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsExt"></span><code>class function <strong>IsExt</strong>(const AExt: string): Boolean; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -214,8 +203,8 @@ Returns <code>True</code> if a string represents a file extension, e.g. <code>'t
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NormalizeExt"></span><code>class function <b>NormalizeExt</b>(const AExt: string): string; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NormalizeExt"></span><code>class function <strong>NormalizeExt</strong>(const AExt: string): string; static; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -230,8 +219,8 @@ Normalizes file extension by adding a dot, e.g. a <code>'pas'</code> will be nor
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Prepare"></span><code>procedure <b>Prepare</b>; virtual; abstract;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Prepare"></span><code>procedure <strong>Prepare</strong>; virtual; abstract;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -240,8 +229,8 @@ Prepares the media types source.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Add"></span><code>procedure <b>Add</b>(const AExt, AType: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(const AExt, AType: string); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -257,8 +246,8 @@ Adds a new media type to the cache.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Remove"></span><code>procedure <b>Remove</b>(const AExt: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>procedure <strong>Remove</strong>(const AExt: string); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -272,8 +261,8 @@ Removes a media type from the cache. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TryType"></span><code>function <b>TryType</b>(const AExt: string; out AType: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TryType"></span><code>function <strong>TryType</strong>(const AExt: string; out AType: string): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -290,8 +279,8 @@ If the cache is not <a class="normal" href="BrookMediaTypes.TBrookMediaTypes.htm
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Find"></span><code>function <b>Find</b>(const AExt, ADefType: string): string; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Find"></span><code>function <strong>Find</strong>(const AExt, ADefType: string): string; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -308,8 +297,8 @@ Finds a media type identifier by file extension. If the cache is not <a class="n
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Find"></span><code>function <b>Find</b>(const AExt: string): string; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Find"></span><code>function <strong>Find</strong>(const AExt: string): string; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -324,8 +313,8 @@ Finds a media type identifier by file extension. If the cache is not <a class="n
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Count"></span><code>function <b>Count</b>: Integer; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Count"></span><code>function <strong>Count</strong>: Integer; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -335,8 +324,8 @@ Counts all media type identifiers present in the cache. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -346,8 +335,8 @@ Clears all media type identifiers present in the cache.</p>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DefaultType"></span><code>property <b>DefaultType</b>: string read FDefaultType write SetDefaultType;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultType"></span><code>property <strong>DefaultType</strong>: string read FDefaultType write SetDefaultType;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -356,14 +345,14 @@ Default media type identifier returned by <code><a class="normal" href="BrookMed
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Prepared"></span><code>property <b>Prepared</b>: Boolean read IsPrepared;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Prepared"></span><code>property <strong>Prepared</strong>: Boolean read IsPrepared;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 <code>True</code> if the media types cache is <code>prepared</code>.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

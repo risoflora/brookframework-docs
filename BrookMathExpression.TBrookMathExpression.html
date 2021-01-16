@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookMathExpression"></span><h1 class="cio">Class TBrookMathExpression</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookMathExpression.html">BrookMathExpression</a></p>
+<a href="BrookMathExpression.html">BrookMathExpression</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookMathExpression = class(<a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a>)</code></p>
@@ -39,100 +27,102 @@ $(document).ready(function() {
 <p>
 Mathematical <a class="normal" href="BrookMathExpression.TBrookMathExpression.html#Expression">expression</a> evaluator.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TComponent</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a></li>
 <li class="thisitem">TBrookMathExpression</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookMathExpression.TBrookMathExpression.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookMathExpression.TBrookMathExpression.html#Create">Create</a></strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <b><a  href="BrookMathExpression.TBrookMathExpression.html#Destroy">Destroy</a></b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BrookMathExpression.TBrookMathExpression.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMathExpression.TBrookMathExpression.html#Open">Open</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMathExpression.TBrookMathExpression.html#Open">Open</a></strong>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMathExpression.TBrookMathExpression.html#Close">Close</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMathExpression.TBrookMathExpression.html#Close">Close</a></strong>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMathExpression.TBrookMathExpression.html#Compile">Compile</a></b>(const AExpression: string; out AError: <a  href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMathExpression.TBrookMathExpression.html#Compile">Compile</a></strong>(const AExpression: string; out AError: <a href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>): Boolean; overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMathExpression.TBrookMathExpression.html#Compile">Compile</a></b>(const AExpression: string): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMathExpression.TBrookMathExpression.html#Compile">Compile</a></strong>(const AExpression: string): Boolean; overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMathExpression.TBrookMathExpression.html#Clear">Clear</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMathExpression.TBrookMathExpression.html#Clear">Clear</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMathExpression.TBrookMathExpression.html#Evaluate">Evaluate</a></b>: Double; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMathExpression.TBrookMathExpression.html#Evaluate">Evaluate</a></strong>: Double; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a></b>(const AName: string): Double; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a></strong>(const AName: string): Double; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a></b>(const AName: string; const AValue: Double); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a></strong>(const AName: string; const AValue: Double); virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#Compiled">Compiled</a></b>: Boolean read FCompiled;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#Compiled">Compiled</a></strong>: Boolean read FCompiled;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#Variables">Variables</a></b>[constAName:string]: Double read <a  href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a>
-      write <a  href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#Variables">Variables</a></strong>[constAName:string]: Double read <a href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a>
+      write <a href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#Active">Active</a></b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#Active">Active</a></strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#Expression">Expression</a></b>: string read FExpression write SetExpression;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#Expression">Expression</a></strong>: string read FExpression write SetExpression;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#Extensions">Extensions</a></b>: TStringList read FExtensions write SetExtensions;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#Extensions">Extensions</a></strong>: TStringList read FExtensions write SetExtensions;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#OnExtension">OnExtension</a></b>: <a  href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a> read FOnExtension
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#OnExtension">OnExtension</a></strong>: <a href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a> read FOnExtension
       write FOnExtension;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#OnError">OnError</a></b>: <a  href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a> read FOnError
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#OnError">OnError</a></strong>: <a href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a> read FOnError
       write FOnError;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#OnActivate">OnActivate</a></b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#OnActivate">OnActivate</a></strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookMathExpression.TBrookMathExpression.html#OnDeactivate">OnDeactivate</a></b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookMathExpression.TBrookMathExpression.html#OnDeactivate">OnDeactivate</a></strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -146,8 +136,8 @@ Creates an instance of <code><a class="normal" href="BrookMathExpression.TBrookM
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -156,8 +146,8 @@ Destroys an instance of <code><a class="normal" href="BrookMathExpression.TBrook
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Open"></span><code>procedure <b>Open</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Open"></span><code>procedure <strong>Open</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -166,8 +156,8 @@ Opens the math <a class="normal" href="BrookMathExpression.TBrookMathExpression.
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Close"></span><code>procedure <b>Close</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Close"></span><code>procedure <strong>Close</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -176,8 +166,8 @@ Closes the math <a class="normal" href="BrookMathExpression.TBrookMathExpression
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Compile"></span><code>function <b>Compile</b>(const AExpression: string; out AError: <a  href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Compile"></span><code>function <strong>Compile</strong>(const AExpression: string; out AError: <a href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>): Boolean; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,8 +184,8 @@ Compiles a mathematical <a class="normal" href="BrookMathExpression.TBrookMathEx
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Compile"></span><code>function <b>Compile</b>(const AExpression: string): Boolean; overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Compile"></span><code>function <strong>Compile</strong>(const AExpression: string): Boolean; overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -210,8 +200,8 @@ Compiles a mathematical <a class="normal" href="BrookMathExpression.TBrookMathEx
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -220,8 +210,8 @@ Clears a mathematical <a class="normal" href="BrookMathExpression.TBrookMathExpr
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Evaluate"></span><code>function <b>Evaluate</b>: Double; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Evaluate"></span><code>function <strong>Evaluate</strong>: Double; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -231,8 +221,8 @@ Evaluates a <a class="normal" href="BrookMathExpression.TBrookMathExpression.htm
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetVariable"></span><code>function <b>GetVariable</b>(const AName: string): Double; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVariable"></span><code>function <strong>GetVariable</strong>(const AName: string): Double; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -247,8 +237,8 @@ Gets the value of a declared variable.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetVariable"></span><code>procedure <b>SetVariable</b>(const AName: string; const AValue: Double); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVariable"></span><code>procedure <strong>SetVariable</strong>(const AName: string; const AValue: Double); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -265,8 +255,8 @@ Sets a variable to the mathematical <a class="normal" href="BrookMathExpression.
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Compiled"></span><code>property <b>Compiled</b>: Boolean read FCompiled;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Compiled"></span><code>property <strong>Compiled</strong>: Boolean read FCompiled;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -275,9 +265,9 @@ Indicates if a mathematical <a class="normal" href="BrookMathExpression.TBrookMa
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Variables"></span><code>property <b>Variables</b>[constAName:string]: Double read <a  href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a>
-      write <a  href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Variables"></span><code>property <strong>Variables</strong>[constAName:string]: Double read <a href="BrookMathExpression.TBrookMathExpression.html#GetVariable">GetVariable</a>
+      write <a href="BrookMathExpression.TBrookMathExpression.html#SetVariable">SetVariable</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -286,8 +276,8 @@ Gets or sets a mathematical <a class="normal" href="BrookMathExpression.TBrookMa
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Active"></span><code>property <b>Active</b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <strong>Active</strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -296,8 +286,8 @@ Activates the mathematical <a class="normal" href="BrookMathExpression.TBrookMat
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Expression"></span><code>property <b>Expression</b>: string read FExpression write SetExpression;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Expression"></span><code>property <strong>Expression</strong>: string read FExpression write SetExpression;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -306,8 +296,8 @@ Declares the mathematical <code>expression</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Extensions"></span><code>property <b>Extensions</b>: TStringList read FExtensions write SetExtensions;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Extensions"></span><code>property <strong>Extensions</strong>: TStringList read FExtensions write SetExtensions;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -316,8 +306,8 @@ Declares the list of mathematical <a class="normal" href="BrookMathExpression.TB
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnExtension"></span><code>property <b>OnExtension</b>: <a  href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a> read FOnExtension
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnExtension"></span><code>property <strong>OnExtension</strong>: <a href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a> read FOnExtension
       write FOnExtension;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -327,8 +317,8 @@ Event triggered when an <a class="normal" href="BrookMathExpression.TBrookMathEx
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnError"></span><code>property <b>OnError</b>: <a  href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a> read FOnError
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnError"></span><code>property <strong>OnError</strong>: <a href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a> read FOnError
       write FOnError;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -338,8 +328,8 @@ Event triggered when a mathematical <a class="normal" href="BrookMathExpression.
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnActivate"></span><code>property <b>OnActivate</b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnActivate"></span><code>property <strong>OnActivate</strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -348,14 +338,14 @@ Event triggered when the math <a class="normal" href="BrookMathExpression.TBrook
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnDeactivate"></span><code>property <b>OnDeactivate</b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnDeactivate"></span><code>property <strong>OnDeactivate</strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Event triggered when the math <a class="normal" href="BrookMathExpression.TBrookMathExpression.html#Expression">expression</a> component is disabled.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

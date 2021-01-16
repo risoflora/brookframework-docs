@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookURLEntryPoints"></span><h1 class="cio">Class TBrookURLEntryPoints</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookURLEntryPoints.html">BrookURLEntryPoints</a></p>
+<a href="BrookURLEntryPoints.html">BrookURLEntryPoints</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookURLEntryPoints = class(<a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a>)</code></p>
@@ -39,87 +27,89 @@ $(document).ready(function() {
 <p>
 URL entry-points component.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TComponent</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a></li>
 <li class="thisitem">TBrookURLEntryPoints</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Create">Create</a></strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Destroy">Destroy</a></b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#GetEnumerator">GetEnumerator</a></b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPointListEnumerator.html">TBrookURLEntryPointListEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#GetEnumerator">GetEnumerator</a></strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPointListEnumerator.html">TBrookURLEntryPointListEnumerator</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Add">Add</a></b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Add">Add</a></strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Remove">Remove</a></b>(const AName: string); inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Remove">Remove</a></strong>(const AName: string); inline;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Clear">Clear</a></b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Clear">Clear</a></strong>; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Open">Open</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Open">Open</a></strong>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Close">Close</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Close">Close</a></strong>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Enter">Enter</a></b>(ASender: TObject; const APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Enter">Enter</a></strong>(ASender: TObject; const APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Enter">Enter</a></b>(ASender: TObject; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Enter">Enter</a></strong>(ASender: TObject; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Items">Items</a></b>[AIndex:Integer]: <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a> read GetItem
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Items">Items</a></strong>[AIndex:Integer]: <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a> read GetItem
       write SetItem;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Active">Active</a></b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#Active">Active</a></strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#List">List</a></b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPointList.html">TBrookURLEntryPointList</a> read FList write SetList;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#List">List</a></strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPointList.html">TBrookURLEntryPointList</a> read FList write SetList;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnNotFound">OnNotFound</a></b>: <a  href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a> read FOnNotFound
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnNotFound">OnNotFound</a></strong>: <a href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a> read FOnNotFound
       write FOnNotFound;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnActivate">OnActivate</a></b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnActivate">OnActivate</a></strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnDeactivate">OnDeactivate</a></b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoints.html#OnDeactivate">OnDeactivate</a></strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -133,8 +123,8 @@ Creates an instance of <code><a class="normal" href="BrookURLEntryPoints.TBrookU
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -143,8 +133,8 @@ Destroys an instance of <code><a class="normal" href="BrookURLEntryPoints.TBrook
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPointListEnumerator.html">TBrookURLEntryPointListEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEnumerator"></span><code>function <strong>GetEnumerator</strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPointListEnumerator.html">TBrookURLEntryPointListEnumerator</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -153,8 +143,8 @@ Creates an enumerator to iterate the entry-points though <code>for..in</code>.</
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Add"></span><code>function <b>Add</b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -164,8 +154,8 @@ Adds a new item to the entry-point <a class="normal" href="BrookURLEntryPoints.T
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Remove"></span><code>procedure <b>Remove</b>(const AName: string); inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>procedure <strong>Remove</strong>(const AName: string); inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -179,8 +169,8 @@ Removes an item from the entry-point <a class="normal" href="BrookURLEntryPoints
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -189,8 +179,8 @@ Clears the entry-point <a class="normal" href="BrookURLEntryPoints.TBrookURLEntr
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Open"></span><code>procedure <b>Open</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Open"></span><code>procedure <strong>Open</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -199,8 +189,8 @@ Enabled the entry-point component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Close"></span><code>procedure <b>Close</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Close"></span><code>procedure <strong>Close</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -209,8 +199,8 @@ Disables the entry-point component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Enter"></span><code>procedure <b>Enter</b>(ASender: TObject; const APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Enter"></span><code>procedure <strong>Enter</strong>(ASender: TObject; const APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -230,8 +220,8 @@ Enters into entry-points routing them.    </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Enter"></span><code>procedure <b>Enter</b>(ASender: TObject; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Enter"></span><code>procedure <strong>Enter</strong>(ASender: TObject; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -250,8 +240,8 @@ Enters into entry-points routing them.   </p>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[AIndex:Integer]: <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a> read GetItem
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Items"></span><code>property <strong>Items</strong>[AIndex:Integer]: <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a> read GetItem
       write SetItem;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -261,8 +251,8 @@ Gets/sets an entry-point from/to the entry-point <a class="normal" href="BrookUR
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Active"></span><code>property <b>Active</b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <strong>Active</strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -271,8 +261,8 @@ Enabled/disables the entry-point component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="List"></span><code>property <b>List</b>: <a  href="BrookURLEntryPoints.TBrookURLEntryPointList.html">TBrookURLEntryPointList</a> read FList write SetList;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="List"></span><code>property <strong>List</strong>: <a href="BrookURLEntryPoints.TBrookURLEntryPointList.html">TBrookURLEntryPointList</a> read FList write SetList;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -281,8 +271,8 @@ Available entry-point <code>list</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnNotFound"></span><code>property <b>OnNotFound</b>: <a  href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a> read FOnNotFound
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnNotFound"></span><code>property <strong>OnNotFound</strong>: <a href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a> read FOnNotFound
       write FOnNotFound;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -292,8 +282,8 @@ Event triggered when an entry-point is not found.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnActivate"></span><code>property <b>OnActivate</b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnActivate"></span><code>property <strong>OnActivate</strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -302,14 +292,14 @@ Event triggered when the component is enabled.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnDeactivate"></span><code>property <b>OnDeactivate</b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnDeactivate"></span><code>property <strong>OnDeactivate</strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Event triggered when the component is disabled.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

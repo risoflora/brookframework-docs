@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookURLEntryPoint"></span><h1 class="cio">Class TBrookURLEntryPoint</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookURLEntryPoints.html">BrookURLEntryPoints</a></p>
+<a href="BrookURLEntryPoints.html">BrookURLEntryPoints</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookURLEntryPoint = class(<a class="normal" href="BrookHandledClasses.TBrookHandledCollectionItem.html">TBrookHandledCollectionItem</a>)</code></p>
@@ -39,41 +27,43 @@ $(document).ready(function() {
 <p>
 Class to represent a URL entry-point item.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TCollectionItem</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledCollectionItem.html">TBrookHandledCollectionItem</a></li>
 <li class="thisitem">TBrookURLEntryPoint</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Create">Create</a></b>(ACollection: TCollection); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Create">Create</a></strong>(ACollection: TCollection); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Validate">Validate</a></b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Validate">Validate</a></strong>; inline;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html#UserData">UserData</a></b>: Pointer read GetUserData write FUserData;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoint.html#UserData">UserData</a></strong>: Pointer read GetUserData write FUserData;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Name">Name</a></b>: string read GetName write SetName;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Name">Name</a></strong>: string read GetName write SetName;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Router">Router</a></b>: <a  href="BrookURLRouter.TBrookURLRouter.html">TBrookURLRouter</a> read GetRouter write SetRouter;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLEntryPoints.TBrookURLEntryPoint.html#Router">Router</a></strong>: <a href="BrookURLRouter.TBrookURLRouter.html">TBrookURLRouter</a> read GetRouter write SetRouter;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(ACollection: TCollection); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ACollection: TCollection); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -87,8 +77,8 @@ Creates an instance of <code><a class="normal" href="BrookURLEntryPoints.TBrookU
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Validate"></span><code>procedure <b>Validate</b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Validate"></span><code>procedure <strong>Validate</strong>; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -98,8 +88,8 @@ Checks if the entry-point <a class="normal" href="BrookURLEntryPoints.TBrookURLE
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="UserData"></span><code>property <b>UserData</b>: Pointer read GetUserData write FUserData;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UserData"></span><code>property <strong>UserData</strong>: Pointer read GetUserData write FUserData;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -108,8 +98,8 @@ User-defined data to be stored temporarily in the entry-point object.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Name"></span><code>property <b>Name</b>: string read GetName write SetName;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read GetName write SetName;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -118,14 +108,14 @@ Entry-point item <code>name</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Router"></span><code>property <b>Router</b>: <a  href="BrookURLRouter.TBrookURLRouter.html">TBrookURLRouter</a> read GetRouter write SetRouter;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Router"></span><code>property <strong>Router</strong>: <a href="BrookURLRouter.TBrookURLRouter.html">TBrookURLRouter</a> read GetRouter write SetRouter;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Referenced <code>router</code> to the entry-point.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

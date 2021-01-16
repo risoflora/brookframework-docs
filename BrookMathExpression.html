@@ -10,22 +10,10 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <h1 class="unit">Unit BrookMathExpression</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
@@ -33,7 +21,7 @@ $(document).ready(function() {
 <p>
 Contains class to <a class="normal" href="BrookMathExpression.html#Evaluate">evaluate</a> mathematical expressions.</p>
 <span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
-<ul class="useslist"><li>SysUtils</li><li>Math</li><li>Classes</li><li>Marshalling</li><li>libsagui</li><li><a  href="BrookHandledClasses.html">BrookHandledClasses</a></li></ul><h2 class="overview">Overview</h2>
+<ul class="useslist"><li>SysUtils</li><li>Math</li><li>Classes</li><li>Marshalling</li><li>libsagui</li><li><a href="BrookHandledClasses.html">BrookHandledClasses</a></li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
 <table class="classestable wide_list">
 <tr class="listheader">
@@ -56,32 +44,32 @@ Contains class to <a class="normal" href="BrookMathExpression.html#Evaluate">eva
 <span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>function <b><a  href="BrookMathExpression.html#Evaluate">Evaluate</a></b>(const AExpression: string): Double;</code></td>
+<td class="itemcode"><code>function <strong><a href="BrookMathExpression.html#Evaluate">Evaluate</a></strong>(const AExpression: string): Double;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookMathExpression.html#TBrookMathExpressionErrorKind">TBrookMathExpressionErrorKind</a></b> = (...);</code></td>
+<td class="itemcode"><code><strong><a href="BrookMathExpression.html#TBrookMathExpressionErrorKind">TBrookMathExpressionErrorKind</a></strong> = (...);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a></b> = procedure(ASender: TObject; AError: <a  href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookMathExpression.html#TBrookMathExpressionErrorEvent">TBrookMathExpressionErrorEvent</a></strong> = procedure(ASender: TObject; AError: <a href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>) of object;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a></b> = function(ASender: TObject; AExtension: <a  href="BrookMathExpression.TBrookMathExpressionExtension.html">TBrookMathExpressionExtension</a>): Double of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookMathExpression.html#TBrookMathExpressionExtensionEvent">TBrookMathExpressionExtensionEvent</a></strong> = function(ASender: TObject; AExtension: <a href="BrookMathExpression.TBrookMathExpressionExtension.html">TBrookMathExpressionExtension</a>): Double of object;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookMathExpression.html#SBrookInactiveMathExpression">SBrookInactiveMathExpression</a></b> = 'Inactive math expression.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookMathExpression.html#SBrookInactiveMathExpression">SBrookInactiveMathExpression</a></strong> = 'Inactive math expression.';</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Functions and Procedures</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Evaluate"></span><code>function <b>Evaluate</b>(const AExpression: string): Double;</code></td>
+<td class="itemcode"><span id="Evaluate"></span><code>function <strong>Evaluate</strong>(const AExpression: string): Double;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -91,7 +79,7 @@ Evaluates a mathematical expression.</p>
 <h3 class="detail">Types</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookMathExpressionErrorKind"></span><code><b>TBrookMathExpressionErrorKind</b> = (...);</code></td>
+<td class="itemcode"><span id="TBrookMathExpressionErrorKind"></span><code><strong>TBrookMathExpressionErrorKind</strong> = (...);</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -129,7 +117,7 @@ Possible error types returned by the mathematical expression evaluator.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookMathExpressionErrorEvent"></span><code><b>TBrookMathExpressionErrorEvent</b> = procedure(ASender: TObject; AError: <a  href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookMathExpressionErrorEvent"></span><code><strong>TBrookMathExpressionErrorEvent</strong> = procedure(ASender: TObject; AError: <a href="BrookMathExpression.TBrookMathExpressionError.html">TBrookMathExpressionError</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -138,7 +126,7 @@ Event signature used to handle errors in a mathematical expression.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookMathExpressionExtensionEvent"></span><code><b>TBrookMathExpressionExtensionEvent</b> = function(ASender: TObject; AExtension: <a  href="BrookMathExpression.TBrookMathExpressionExtension.html">TBrookMathExpressionExtension</a>): Double of object;</code></td>
+<td class="itemcode"><span id="TBrookMathExpressionExtensionEvent"></span><code><strong>TBrookMathExpressionExtensionEvent</strong> = function(ASender: TObject; AExtension: <a href="BrookMathExpression.TBrookMathExpressionExtension.html">TBrookMathExpressionExtension</a>): Double of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -148,13 +136,13 @@ Event signature used to handle extension in a mathematical expression.</p>
 <h3 class="detail">Constants</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookInactiveMathExpression"></span><code><b>SBrookInactiveMathExpression</b> = 'Inactive math expression.';</code></td>
+<td class="itemcode"><span id="SBrookInactiveMathExpression"></span><code><strong>SBrookInactiveMathExpression</strong> = 'Inactive math expression.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
 Error message <code>'Inactive math expression.'</code>.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

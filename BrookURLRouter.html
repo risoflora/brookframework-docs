@@ -10,22 +10,10 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <h1 class="unit">Unit BrookURLRouter</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
@@ -33,7 +21,7 @@ $(document).ready(function() {
 <p>
 Contains classes for fast URL routing.</p>
 <span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
-<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>Classes</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a  href="BrookUtility.html">BrookUtility</a></li><li><a  href="BrookHandledClasses.html">BrookHandledClasses</a></li><li><a  href="BrookStringMap.html">BrookStringMap</a></li><li><a  href="BrookExtra.html">BrookExtra</a></li><li><a  href="BrookHTTPRequest.html">BrookHTTPRequest</a></li><li><a  href="BrookHTTPResponse.html">BrookHTTPResponse</a></li></ul><h2 class="overview">Overview</h2>
+<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>Classes</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a href="BrookUtility.html">BrookUtility</a></li><li><a href="BrookHandledClasses.html">BrookHandledClasses</a></li><li><a href="BrookStringMap.html">BrookStringMap</a></li><li><a href="BrookExtra.html">BrookExtra</a></li><li><a href="BrookHTTPRequest.html">BrookHTTPRequest</a></li><li><a href="BrookHTTPResponse.html">BrookHTTPResponse</a></li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
 <table class="classestable wide_list">
 <tr class="listheader">
@@ -68,53 +56,53 @@ Contains classes for fast URL routing.</p>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#TBrookURLRouteMatchEvent">TBrookURLRouteMatchEvent</a></b> = procedure(ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#TBrookURLRouteMatchEvent">TBrookURLRouteMatchEvent</a></strong> = procedure(ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>) of object;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#TBrookURLRouteRequestEvent">TBrookURLRouteRequestEvent</a></b> = procedure(ASender: TObject; ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#TBrookURLRouteRequestEvent">TBrookURLRouteRequestEvent</a></strong> = procedure(ASender: TObject; ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#TBrookURLRouteRequestMethodEvent">TBrookURLRouteRequestMethodEvent</a></b> = procedure(ASender: TObject; ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>; var AAllowed: Boolean) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#TBrookURLRouteRequestMethodEvent">TBrookURLRouteRequestMethodEvent</a></strong> = procedure(ASender: TObject; ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>; var AAllowed: Boolean) of object;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#TBrookURLRouteClass">TBrookURLRouteClass</a></b> = class of <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#TBrookURLRouteClass">TBrookURLRouteClass</a></strong> = class of <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a></b> = procedure(ASender: TObject; const ARoute: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a></strong> = procedure(ASender: TObject; const ARoute: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookInactiveRouter">SBrookInactiveRouter</a></b> = 'Inactive router.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookInactiveRouter">SBrookInactiveRouter</a></strong> = 'Inactive router.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookNoRoutesDefined">SBrookNoRoutesDefined</a></b> = 'No routes defined.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookNoRoutesDefined">SBrookNoRoutesDefined</a></strong> = 'No routes defined.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookEmptyRoutePattern">SBrookEmptyRoutePattern</a></b> = '%s: pattern cannot be empty.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookEmptyRoutePattern">SBrookEmptyRoutePattern</a></strong> = '%s: pattern cannot be empty.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookRouteAlreadyExists">SBrookRouteAlreadyExists</a></b> = '%s: pattern ''%s'' already exists in ''%s''.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookRouteAlreadyExists">SBrookRouteAlreadyExists</a></strong> = '%s: pattern ''%s'' already exists in ''%s''.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookRequestMethodNotAllowed">SBrookRequestMethodNotAllowed</a></b> = 'Request method not allowed: %s.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookRequestMethodNotAllowed">SBrookRequestMethodNotAllowed</a></strong> = 'Request method not allowed: %s.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookRequestNoMethodDefined">SBrookRequestNoMethodDefined</a></b> = 'No method(s) defined.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookRequestNoMethodDefined">SBrookRequestNoMethodDefined</a></strong> = 'No method(s) defined.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookRouteNotFound">SBrookRouteNotFound</a></b> = 'Route not found: %s.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookRouteNotFound">SBrookRouteNotFound</a></strong> = 'Route not found: %s.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLRouter.html#SBrookDefaultRouteAlreadyExists">SBrookDefaultRouteAlreadyExists</a></b> = 'A default route already exists.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLRouter.html#SBrookDefaultRouteAlreadyExists">SBrookDefaultRouteAlreadyExists</a></strong> = 'A default route already exists.';</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Types</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLRouteMatchEvent"></span><code><b>TBrookURLRouteMatchEvent</b> = procedure(ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookURLRouteMatchEvent"></span><code><strong>TBrookURLRouteMatchEvent</strong> = procedure(ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -123,7 +111,7 @@ Event signature used by <code><a class="normal" href="BrookURLRouter.TBrookURLRo
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLRouteRequestEvent"></span><code><b>TBrookURLRouteRequestEvent</b> = procedure(ASender: TObject; ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookURLRouteRequestEvent"></span><code><strong>TBrookURLRouteRequestEvent</strong> = procedure(ASender: TObject; ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -132,7 +120,7 @@ Event signature used by <code><a class="normal" href="BrookURLRouter.TBrookURLRo
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLRouteRequestMethodEvent"></span><code><b>TBrookURLRouteRequestMethodEvent</b> = procedure(ASender: TObject; ARoute: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>; var AAllowed: Boolean) of object;</code></td>
+<td class="itemcode"><span id="TBrookURLRouteRequestMethodEvent"></span><code><strong>TBrookURLRouteRequestMethodEvent</strong> = procedure(ASender: TObject; ARoute: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>; var AAllowed: Boolean) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -141,7 +129,7 @@ Event signature used by <code><a class="normal" href="BrookURLRouter.TBrookURLRo
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLRouteClass"></span><code><b>TBrookURLRouteClass</b> = class of <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>;</code></td>
+<td class="itemcode"><span id="TBrookURLRouteClass"></span><code><strong>TBrookURLRouteClass</strong> = class of <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -150,7 +138,7 @@ Class-reference for <code><a class="normal" href="BrookURLRouter.TBrookURLRoute.
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLRouterRouteEvent"></span><code><b>TBrookURLRouterRouteEvent</b> = procedure(ASender: TObject; const ARoute: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookURLRouterRouteEvent"></span><code><strong>TBrookURLRouterRouteEvent</strong> = procedure(ASender: TObject; const ARoute: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -160,7 +148,7 @@ Event signature used by <code><a class="normal" href="BrookURLRouter.TBrookURLRo
 <h3 class="detail">Constants</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookInactiveRouter"></span><code><b>SBrookInactiveRouter</b> = 'Inactive router.';</code></td>
+<td class="itemcode"><span id="SBrookInactiveRouter"></span><code><strong>SBrookInactiveRouter</strong> = 'Inactive router.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -169,7 +157,7 @@ Error message <code>'Inactive router.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookNoRoutesDefined"></span><code><b>SBrookNoRoutesDefined</b> = 'No routes defined.';</code></td>
+<td class="itemcode"><span id="SBrookNoRoutesDefined"></span><code><strong>SBrookNoRoutesDefined</strong> = 'No routes defined.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -178,7 +166,7 @@ Error message <code>'No routes defined.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookEmptyRoutePattern"></span><code><b>SBrookEmptyRoutePattern</b> = '%s: pattern cannot be empty.';</code></td>
+<td class="itemcode"><span id="SBrookEmptyRoutePattern"></span><code><strong>SBrookEmptyRoutePattern</strong> = '%s: pattern cannot be empty.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -187,7 +175,7 @@ Error message <code>'&lt;new-class&gt;: pattern cannot be empty.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookRouteAlreadyExists"></span><code><b>SBrookRouteAlreadyExists</b> = '%s: pattern ''%s'' already exists in ''%s''.';</code></td>
+<td class="itemcode"><span id="SBrookRouteAlreadyExists"></span><code><strong>SBrookRouteAlreadyExists</strong> = '%s: pattern ''%s'' already exists in ''%s''.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -196,7 +184,7 @@ Error message <code>'&lt;new-class&gt;: pattern &lt;pattern&gt; already exists i
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookRequestMethodNotAllowed"></span><code><b>SBrookRequestMethodNotAllowed</b> = 'Request method not allowed: %s.';</code></td>
+<td class="itemcode"><span id="SBrookRequestMethodNotAllowed"></span><code><strong>SBrookRequestMethodNotAllowed</strong> = 'Request method not allowed: %s.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -205,7 +193,7 @@ Error message <code>'Request method not allowed: &lt;method&gt;.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookRequestNoMethodDefined"></span><code><b>SBrookRequestNoMethodDefined</b> = 'No method(s) defined.';</code></td>
+<td class="itemcode"><span id="SBrookRequestNoMethodDefined"></span><code><strong>SBrookRequestNoMethodDefined</strong> = 'No method(s) defined.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -214,7 +202,7 @@ Error message <code>'No routes defined.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookRouteNotFound"></span><code><b>SBrookRouteNotFound</b> = 'Route not found: %s.';</code></td>
+<td class="itemcode"><span id="SBrookRouteNotFound"></span><code><strong>SBrookRouteNotFound</strong> = 'Route not found: %s.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -223,13 +211,13 @@ Error message <code>'Route not found: &lt;route&gt;.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookDefaultRouteAlreadyExists"></span><code><b>SBrookDefaultRouteAlreadyExists</b> = 'A default route already exists.';</code></td>
+<td class="itemcode"><span id="SBrookDefaultRouteAlreadyExists"></span><code><strong>SBrookDefaultRouteAlreadyExists</strong> = 'A default route already exists.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
 Error message <code>'A default route already exists.'</code>.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

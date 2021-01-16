@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookStringMap"></span><h1 class="cio">Class TBrookStringMap</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookStringMap.html">BrookStringMap</a></p>
+<a href="BrookStringMap.html">BrookStringMap</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookStringMap = class(<a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a>)</code></p>
@@ -39,126 +27,127 @@ $(document).ready(function() {
 <p>
 String map class and its related methods.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html">TBrookHandledPersistent</a></li>
 <li class="thisitem">TBrookStringMap</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookStringMap.TBrookStringMap.html#Create">Create</a></b>(AHandle: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookStringMap.TBrookStringMap.html#Create">Create</a></strong>(AHandle: Pointer); virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <b><a  href="BrookStringMap.TBrookStringMap.html#Destroy">Destroy</a></b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BrookStringMap.TBrookStringMap.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Assign">Assign</a></b>(ASource: TPersistent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Assign">Assign</a></strong>(ASource: TPersistent); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a></b>: Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a></strong>: Boolean; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#GetEnumerator">GetEnumerator</a></b>: <a  href="BrookStringMap.TBrookStringMapEnumerator.html">TBrookStringMapEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#GetEnumerator">GetEnumerator</a></strong>: <a href="BrookStringMap.TBrookStringMapEnumerator.html">TBrookStringMapEnumerator</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Add">Add</a></b>(const AName, AValue: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Add">Add</a></strong>(const AName, AValue: string); virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#AddOrSet">AddOrSet</a></b>(const AName, AValue: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#AddOrSet">AddOrSet</a></strong>(const AName, AValue: string); virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Remove">Remove</a></b>(const AName: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Remove">Remove</a></strong>(const AName: string); virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Clear">Clear</a></b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Clear">Clear</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#Find">Find</a></b>(const AName: string; out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#Find">Find</a></strong>(const AName: string; out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#Contains">Contains</a></b>(const AName: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#Contains">Contains</a></strong>(const AName: string): Boolean; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#Get">Get</a></b>(const AName: string): string; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#Get">Get</a></strong>(const AName: string): string; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#TryValue">TryValue</a></b>(const AName: string; out AValue: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#TryValue">TryValue</a></strong>(const AName: string; out AValue: string): Boolean; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#First">First</a></b>(out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#First">First</a></strong>(out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#Next">Next</a></b>(out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#Next">Next</a></strong>(out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Iterate">Iterate</a></b>(AIterator: <a  href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a>; AData: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Iterate">Iterate</a></strong>(AIterator: <a href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a>; AData: Pointer); virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Sort">Sort</a></b>(AComparator: <a  href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a>; AData: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Sort">Sort</a></strong>(AComparator: <a href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a>; AData: Pointer); virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Fetch">Fetch</a></b>(AObject: TObject; const AAllowed, AIgnored: array of string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Fetch">Fetch</a></strong>(AObject: TObject; const AAllowed, AIgnored: array of string); overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookStringMap.TBrookStringMap.html#Fetch">Fetch</a></b>(AObject: TObject); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookStringMap.TBrookStringMap.html#Fetch">Fetch</a></strong>(AObject: TObject); overload; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMap.html#ToString">ToString</a></b>: string; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMap.html#ToString">ToString</a></strong>: string; override;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#Count">Count</a></b>: Integer read GetCount;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#Count">Count</a></strong>: Integer read GetCount;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#Values">Values</a></b>[constAName:string]: string read GetValue
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#Values">Values</a></strong>[constAName:string]: string read GetValue
       write SetValue;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#EOF">EOF</a></b>: Boolean read IsEOF;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#EOF">EOF</a></strong>: Boolean read IsEOF;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#Empty">Empty</a></b>: Boolean read <a  href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#Empty">Empty</a></strong>: Boolean read <a href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#ClearOnDestroy">ClearOnDestroy</a></b>: Boolean read FClearOnDestroy write FClearOnDestroy;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#ClearOnDestroy">ClearOnDestroy</a></strong>: Boolean read FClearOnDestroy write FClearOnDestroy;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMap.html#OnChange">OnChange</a></b>: <a  href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a> read FOnChange write FOnChange;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMap.html#OnChange">OnChange</a></strong>: <a href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a> read FOnChange write FOnChange;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AHandle: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AHandle: Pointer); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -172,8 +161,8 @@ Creates an instance of <code><a class="normal" href="BrookStringMap.TBrookString
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -182,8 +171,8 @@ Frees an instance of <code><a class="normal" href="BrookStringMap.TBrookStringMa
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Assign"></span><code>procedure <b>Assign</b>(ASource: TPersistent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Assign"></span><code>procedure <strong>Assign</strong>(ASource: TPersistent); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -197,8 +186,8 @@ Copies the properties of the source string map. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="IsEmpty"></span><code>function <b>IsEmpty</b>: Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsEmpty"></span><code>function <strong>IsEmpty</strong>: Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -208,8 +197,8 @@ Checks if the map is <a class="normal" href="BrookStringMap.TBrookStringMap.html
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: <a  href="BrookStringMap.TBrookStringMapEnumerator.html">TBrookStringMapEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEnumerator"></span><code>function <strong>GetEnumerator</strong>: <a href="BrookStringMap.TBrookStringMapEnumerator.html">TBrookStringMapEnumerator</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -218,8 +207,8 @@ Gets an instance of <code><a class="normal" href="BrookStringMap.TBrookStringMap
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Add"></span><code>procedure <b>Add</b>(const AName, AValue: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(const AName, AValue: string); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -235,8 +224,8 @@ Adds a pair of strings to the map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="AddOrSet"></span><code>procedure <b>AddOrSet</b>(const AName, AValue: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOrSet"></span><code>procedure <strong>AddOrSet</strong>(const AName, AValue: string); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -252,8 +241,8 @@ Adds or sets a pair of strings to the map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Remove"></span><code>procedure <b>Remove</b>(const AName: string); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>procedure <strong>Remove</strong>(const AName: string); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -267,8 +256,8 @@ Removes a pair by its name. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -277,8 +266,8 @@ Clears the entire map.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Find"></span><code>function <b>Find</b>(const AName: string; out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Find"></span><code>function <strong>Find</strong>(const AName: string; out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -295,8 +284,8 @@ Finds a pair by its name.   </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Contains"></span><code>function <b>Contains</b>(const AName: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Contains"></span><code>function <strong>Contains</strong>(const AName: string): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -311,8 +300,8 @@ Checks if map <code>contains</code> a pair by its name.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Get"></span><code>function <b>Get</b>(const AName: string): string; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get"></span><code>function <strong>Get</strong>(const AName: string): string; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -327,8 +316,8 @@ Gets a pair by name and returns its value.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TryValue"></span><code>function <b>TryValue</b>(const AName: string; out AValue: string): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TryValue"></span><code>function <strong>TryValue</strong>(const AName: string; out AValue: string): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -345,8 +334,8 @@ Tries to <a class="normal" href="BrookStringMap.TBrookStringMap.html#Find">find<
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="First"></span><code>function <b>First</b>(out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="First"></span><code>function <strong>First</strong>(out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -361,8 +350,8 @@ Retrieves the <code>first</code> pair in the map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Next"></span><code>function <b>Next</b>(out APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Next"></span><code>function <strong>Next</strong>(out APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -376,8 +365,8 @@ Retrieves the <code>next</code> pair in the map. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Iterate"></span><code>procedure <b>Iterate</b>(AIterator: <a  href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a>; AData: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Iterate"></span><code>procedure <strong>Iterate</strong>(AIterator: <a href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a>; AData: Pointer); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -393,8 +382,8 @@ Iterates over pairs map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Sort"></span><code>procedure <b>Sort</b>(AComparator: <a  href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a>; AData: Pointer); virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Sort"></span><code>procedure <strong>Sort</strong>(AComparator: <a href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a>; AData: Pointer); virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -410,8 +399,8 @@ Sorts the pairs map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Fetch"></span><code>procedure <b>Fetch</b>(AObject: TObject; const AAllowed, AIgnored: array of string); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fetch"></span><code>procedure <strong>Fetch</strong>(AObject: TObject; const AAllowed, AIgnored: array of string); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -429,8 +418,8 @@ Fetches a string map as an object.   </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Fetch"></span><code>procedure <b>Fetch</b>(AObject: TObject); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fetch"></span><code>procedure <strong>Fetch</strong>(AObject: TObject); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -439,8 +428,8 @@ Fetches a string map as an object.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ToString"></span><code>function <b>ToString</b>: string; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToString"></span><code>function <strong>ToString</strong>: string; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -450,8 +439,8 @@ Gets the map as big string using equal sign to separate each pair and ending lin
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: Integer read GetCount;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Count"></span><code>property <strong>Count</strong>: Integer read GetCount;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -460,8 +449,8 @@ Counts the total pairs present in the map.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>[constAName:string]: string read GetValue
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Values"></span><code>property <strong>Values</strong>[constAName:string]: string read GetValue
       write SetValue;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -471,8 +460,8 @@ Adds or gets the pair value.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="EOF"></span><code>property <b>EOF</b>: Boolean read IsEOF;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EOF"></span><code>property <strong>EOF</strong>: Boolean read IsEOF;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -481,8 +470,8 @@ Indicates the end of map.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Empty"></span><code>property <b>Empty</b>: Boolean read <a  href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Empty"></span><code>property <strong>Empty</strong>: Boolean read <a href="BrookStringMap.TBrookStringMap.html#IsEmpty">IsEmpty</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -491,8 +480,8 @@ Indicates if the map is <code>empty</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ClearOnDestroy"></span><code>property <b>ClearOnDestroy</b>: Boolean read FClearOnDestroy write FClearOnDestroy;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClearOnDestroy"></span><code>property <strong>ClearOnDestroy</strong>: Boolean read FClearOnDestroy write FClearOnDestroy;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -501,14 +490,14 @@ Clears the list on <a class="normal" href="BrookStringMap.TBrookStringMap.html#D
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="OnChange"></span><code>property <b>OnChange</b>: <a  href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a> read FOnChange write FOnChange;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnChange"></span><code>property <strong>OnChange</strong>: <a href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a> read FOnChange write FOnChange;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Notifies a change in the map.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

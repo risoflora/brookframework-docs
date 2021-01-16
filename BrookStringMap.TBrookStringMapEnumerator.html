@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookStringMapEnumerator"></span><h1 class="cio">Class TBrookStringMapEnumerator</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookStringMap.html">BrookStringMap</a></p>
+<a href="BrookStringMap.html">BrookStringMap</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookStringMapEnumerator = class(TObject)</code></p>
@@ -44,31 +32,31 @@ Enumerator used to iterate the map <code><a class="normal" href="BrookStringMap.
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookStringMap.TBrookStringMapEnumerator.html#Create">Create</a></b>(AMap: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a>);</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookStringMap.TBrookStringMapEnumerator.html#Create">Create</a></strong>(AMap: <a href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a>);</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a></b>: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a></strong>: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookStringMap.TBrookStringMapEnumerator.html#MoveNext">MoveNext</a></b>: Boolean;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookStringMap.TBrookStringMapEnumerator.html#MoveNext">MoveNext</a></strong>: Boolean;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookStringMap.TBrookStringMapEnumerator.html#Current">Current</a></b>: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a> read <a  href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookStringMap.TBrookStringMapEnumerator.html#Current">Current</a></strong>: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a> read <a href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AMap: <a  href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a>);</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AMap: <a href="BrookStringMap.TBrookStringMap.html">TBrookStringMap</a>);</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -82,8 +70,8 @@ Creates an instance of <code><a class="normal" href="BrookStringMap.TBrookString
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetCurrent"></span><code>function <b>GetCurrent</b>: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCurrent"></span><code>function <strong>GetCurrent</strong>: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -93,8 +81,8 @@ Gets the <a class="normal" href="BrookStringMap.TBrookStringMapEnumerator.html#C
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="MoveNext"></span><code>function <b>MoveNext</b>: Boolean;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MoveNext"></span><code>function <strong>MoveNext</strong>: Boolean;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -105,14 +93,14 @@ Moves to the next pair. </p>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Current"></span><code>property <b>Current</b>: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a> read <a  href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Current"></span><code>property <strong>Current</strong>: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a> read <a href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Same to <code><a class="normal" href="BrookStringMap.TBrookStringMapEnumerator.html#GetCurrent">GetCurrent</a></code>.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

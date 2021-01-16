@@ -10,22 +10,10 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <h1 class="unit">Unit BrookStringMap</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
@@ -33,7 +21,7 @@ $(document).ready(function() {
 <p>
 String map used to represent HTML fields, query-string parameters and more.</p>
 <span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
-<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>StrUtils</li><li>Classes</li><li>TypInfo</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a  href="BrookUtility.html">BrookUtility</a></li><li><a  href="BrookHandledClasses.html">BrookHandledClasses</a></li></ul><h2 class="overview">Overview</h2>
+<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>StrUtils</li><li>Classes</li><li>TypInfo</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a href="BrookUtility.html">BrookUtility</a></li><li><a href="BrookHandledClasses.html">BrookHandledClasses</a></li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
 <table class="classestable wide_list">
 <tr class="listheader">
@@ -56,23 +44,23 @@ String map used to represent HTML fields, query-string parameters and more.</p>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a></b> = (...);</code></td>
+<td class="itemcode"><code><strong><a href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a></strong> = (...);</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a></b> = procedure(ASender: TObject; AOperation: <a  href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookStringMap.html#TBrookStringMapChangeEvent">TBrookStringMapChangeEvent</a></strong> = procedure(ASender: TObject; AOperation: <a href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a>) of object;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a></b> = function(AData: Pointer; APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
+<td class="itemcode"><code><strong><a href="BrookStringMap.html#TBrookStringMapIterator">TBrookStringMapIterator</a></strong> = function(AData: Pointer; APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a></b> = function(AData: Pointer; APairA, APairB: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
+<td class="itemcode"><code><strong><a href="BrookStringMap.html#TBrookStringMapComparator">TBrookStringMapComparator</a></strong> = function(AData: Pointer; APairA, APairB: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Types</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookStringMapOperation"></span><code><b>TBrookStringMapOperation</b> = (...);</code></td>
+<td class="itemcode"><span id="TBrookStringMapOperation"></span><code><strong>TBrookStringMapOperation</strong> = (...);</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -92,7 +80,7 @@ Identifies the kind of operation in the map.    </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookStringMapChangeEvent"></span><code><b>TBrookStringMapChangeEvent</b> = procedure(ASender: TObject; AOperation: <a  href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookStringMapChangeEvent"></span><code><strong>TBrookStringMapChangeEvent</strong> = procedure(ASender: TObject; AOperation: <a href="BrookStringMap.html#TBrookStringMapOperation">TBrookStringMapOperation</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -108,7 +96,7 @@ Event signature used to notify a change in the map.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookStringMapIterator"></span><code><b>TBrookStringMapIterator</b> = function(AData: Pointer; APair: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
+<td class="itemcode"><span id="TBrookStringMapIterator"></span><code><strong>TBrookStringMapIterator</strong> = function(AData: Pointer; APair: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -124,7 +112,7 @@ Function signature used by <code><a class="normal" href="BrookStringMap.TBrookSt
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookStringMapComparator"></span><code><b>TBrookStringMapComparator</b> = function(AData: Pointer; APairA, APairB: <a  href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
+<td class="itemcode"><span id="TBrookStringMapComparator"></span><code><strong>TBrookStringMapComparator</strong> = function(AData: Pointer; APairA, APairB: <a href="BrookStringMap.TBrookStringPair.html">TBrookStringPair</a>): Integer;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -140,6 +128,6 @@ Function signature used by <code><a class="normal" href="BrookStringMap.TBrookSt
 </dl>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

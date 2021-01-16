@@ -10,22 +10,10 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <h1 class="unit">Unit BrookURLEntryPoints</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
@@ -33,7 +21,7 @@ $(document).ready(function() {
 <p>
 Contains classes for handling URL entry-points.</p>
 <span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
-<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>Classes</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a  href="BrookUtility.html">BrookUtility</a></li><li><a  href="BrookHandledClasses.html">BrookHandledClasses</a></li><li><a  href="BrookExtra.html">BrookExtra</a></li><li><a  href="BrookHTTPRequest.html">BrookHTTPRequest</a></li><li><a  href="BrookHTTPResponse.html">BrookHTTPResponse</a></li><li><a  href="BrookURLRouter.html">BrookURLRouter</a></li></ul><h2 class="overview">Overview</h2>
+<ul class="useslist"><li>RTLConsts</li><li>SysUtils</li><li>Classes</li><li>Platform</li><li>Marshalling</li><li>libsagui</li><li><a href="BrookUtility.html">BrookUtility</a></li><li><a href="BrookHandledClasses.html">BrookHandledClasses</a></li><li><a href="BrookExtra.html">BrookExtra</a></li><li><a href="BrookHTTPRequest.html">BrookHTTPRequest</a></li><li><a href="BrookHTTPResponse.html">BrookHTTPResponse</a></li><li><a href="BrookURLRouter.html">BrookURLRouter</a></li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
 <table class="classestable wide_list">
 <tr class="listheader">
@@ -68,42 +56,42 @@ Contains classes for handling URL entry-points.</p>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#TBrookURLEntryPointClass">TBrookURLEntryPointClass</a></b> = class of <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#TBrookURLEntryPointClass">TBrookURLEntryPointClass</a></strong> = class of <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a></b> = procedure(ASender: TObject; const AEntryPoint, APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#TBrookURLEntryPointsNotFoundEvent">TBrookURLEntryPointsNotFoundEvent</a></strong> = procedure(ASender: TObject; const AEntryPoint, APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookEntryPointListUnprepared">SBrookEntryPointListUnprepared</a></b> = 'Entry-point list not prepared.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookEntryPointListUnprepared">SBrookEntryPointListUnprepared</a></strong> = 'Entry-point list not prepared.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookInactiveEntryPoints">SBrookInactiveEntryPoints</a></b> = 'Inactive entry-points.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookInactiveEntryPoints">SBrookInactiveEntryPoints</a></strong> = 'Inactive entry-points.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookNoEntryPointsDefined">SBrookNoEntryPointsDefined</a></b> = 'No entry-points defined.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookNoEntryPointsDefined">SBrookNoEntryPointsDefined</a></strong> = 'No entry-points defined.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookEntryPointAlreadyExists">SBrookEntryPointAlreadyExists</a></b> =
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookEntryPointAlreadyExists">SBrookEntryPointAlreadyExists</a></strong> =
     '%s: entry-point ''%s'' already exists in ''%s''.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookEmptyEntryPointName">SBrookEmptyEntryPointName</a></b> = '%s: entry-point cannot be empty.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookEmptyEntryPointName">SBrookEmptyEntryPointName</a></strong> = '%s: entry-point cannot be empty.';</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookEntryPointNotFound">SBrookEntryPointNotFound</a></b> = 'Entry-point not found: %s.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookEntryPointNotFound">SBrookEntryPointNotFound</a></strong> = 'Entry-point not found: %s.';</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code><b><a  href="BrookURLEntryPoints.html#SBrookRouterNotAssigned">SBrookRouterNotAssigned</a></b> = 'Router not assigned for entry-point ''%s''.';</code></td>
+<td class="itemcode"><code><strong><a href="BrookURLEntryPoints.html#SBrookRouterNotAssigned">SBrookRouterNotAssigned</a></strong> = 'Router not assigned for entry-point ''%s''.';</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Types</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLEntryPointClass"></span><code><b>TBrookURLEntryPointClass</b> = class of <a  href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>;</code></td>
+<td class="itemcode"><span id="TBrookURLEntryPointClass"></span><code><strong>TBrookURLEntryPointClass</strong> = class of <a href="BrookURLEntryPoints.TBrookURLEntryPoint.html">TBrookURLEntryPoint</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -112,7 +100,7 @@ Class-reference for <code><a class="normal" href="BrookURLEntryPoints.TBrookURLE
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TBrookURLEntryPointsNotFoundEvent"></span><code><b>TBrookURLEntryPointsNotFoundEvent</b> = procedure(ASender: TObject; const AEntryPoint, APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
+<td class="itemcode"><span id="TBrookURLEntryPointsNotFoundEvent"></span><code><strong>TBrookURLEntryPointsNotFoundEvent</strong> = procedure(ASender: TObject; const AEntryPoint, APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>) of object;</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -122,7 +110,7 @@ Event signature used by <code><a class="normal" href="BrookURLEntryPoints.TBrook
 <h3 class="detail">Constants</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookEntryPointListUnprepared"></span><code><b>SBrookEntryPointListUnprepared</b> = 'Entry-point list not prepared.';</code></td>
+<td class="itemcode"><span id="SBrookEntryPointListUnprepared"></span><code><strong>SBrookEntryPointListUnprepared</strong> = 'Entry-point list not prepared.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -131,7 +119,7 @@ Error message <code>'Entry-point list not prepared.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookInactiveEntryPoints"></span><code><b>SBrookInactiveEntryPoints</b> = 'Inactive entry-points.';</code></td>
+<td class="itemcode"><span id="SBrookInactiveEntryPoints"></span><code><strong>SBrookInactiveEntryPoints</strong> = 'Inactive entry-points.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -140,7 +128,7 @@ Error message <code>'Inactive entry-points.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookNoEntryPointsDefined"></span><code><b>SBrookNoEntryPointsDefined</b> = 'No entry-points defined.';</code></td>
+<td class="itemcode"><span id="SBrookNoEntryPointsDefined"></span><code><strong>SBrookNoEntryPointsDefined</strong> = 'No entry-points defined.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -149,7 +137,7 @@ Error message <code>'No entry-points defined.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookEntryPointAlreadyExists"></span><code><b>SBrookEntryPointAlreadyExists</b> =
+<td class="itemcode"><span id="SBrookEntryPointAlreadyExists"></span><code><strong>SBrookEntryPointAlreadyExists</strong> =
     '%s: entry-point ''%s'' already exists in ''%s''.';</code></td>
 </tr>
 <tr><td colspan="1">
@@ -159,7 +147,7 @@ Error message <code>'&lt;new-class&gt;: entry-point &lt;entry-point&gt; already 
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookEmptyEntryPointName"></span><code><b>SBrookEmptyEntryPointName</b> = '%s: entry-point cannot be empty.';</code></td>
+<td class="itemcode"><span id="SBrookEmptyEntryPointName"></span><code><strong>SBrookEmptyEntryPointName</strong> = '%s: entry-point cannot be empty.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -168,7 +156,7 @@ Error message <code>'&lt;new-class&gt;: entry-point cannot be empty.'</code>.</p
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookEntryPointNotFound"></span><code><b>SBrookEntryPointNotFound</b> = 'Entry-point not found: %s.';</code></td>
+<td class="itemcode"><span id="SBrookEntryPointNotFound"></span><code><strong>SBrookEntryPointNotFound</strong> = 'Entry-point not found: %s.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
@@ -177,13 +165,13 @@ Error message <code>'Entry-point not found: &lt;entry-point&gt;.'</code>.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="SBrookRouterNotAssigned"></span><code><b>SBrookRouterNotAssigned</b> = 'Router not assigned for entry-point ''%s''.';</code></td>
+<td class="itemcode"><span id="SBrookRouterNotAssigned"></span><code><strong>SBrookRouterNotAssigned</strong> = 'Router not assigned for entry-point ''%s''.';</code></td>
 </tr>
 <tr><td colspan="1">
 <p>
 Error message <code>'Router not assigned for entry-point &lt;entry-point&gt;.'</code>.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="TBrookURLRouter"></span><h1 class="cio">Class TBrookURLRouter</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookURLRouter.html">BrookURLRouter</a></p>
+<a href="BrookURLRouter.html">BrookURLRouter</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type TBrookURLRouter = class(<a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a>)</code></p>
@@ -39,95 +27,97 @@ $(document).ready(function() {
 <p>
 URL router component.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
-<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
+<li class="ancestor">TComponent</li>
 <li class="ancestor"><a class="normal" href="BrookHandledClasses.TBrookHandledComponent.html">TBrookHandledComponent</a></li>
 <li class="thisitem">TBrookURLRouter</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <b><a  href="BrookURLRouter.TBrookURLRouter.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BrookURLRouter.TBrookURLRouter.html#Create">Create</a></strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>destructor <b><a  href="BrookURLRouter.TBrookURLRouter.html#Destroy">Destroy</a></b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BrookURLRouter.TBrookURLRouter.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRouter.html#GetEnumerator">GetEnumerator</a></b>: <a  href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookURLRouter.TBrookURLRouter.html#GetEnumerator">GetEnumerator</a></strong>: <a href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRouter.html#Add">Add</a></b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookURLRouter.TBrookURLRouter.html#Add">Add</a></strong>: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Remove">Remove</a></b>(const APattern: string); inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Remove">Remove</a></strong>(const APattern: string); inline;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Clear">Clear</a></b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Clear">Clear</a></strong>; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Open">Open</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Open">Open</a></strong>;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Close">Close</a></b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Close">Close</a></strong>;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <b><a  href="BrookURLRouter.TBrookURLRouter.html#DispatchRoute">DispatchRoute</a></b>(const APath: string; AUserData: Pointer): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BrookURLRouter.TBrookURLRouter.html#DispatchRoute">DispatchRoute</a></strong>(const APath: string; AUserData: Pointer): Boolean; virtual;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Route">Route</a></b>(ASender: TObject; const APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Route">Route</a></strong>(ASender: TObject; const APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <b><a  href="BrookURLRouter.TBrookURLRouter.html#Route">Route</a></b>(ASender: TObject; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookURLRouter.TBrookURLRouter.html#Route">Route</a></strong>(ASender: TObject; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#Items">Items</a></b>[AIndex:Integer]: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#Items">Items</a></strong>[AIndex:Integer]: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
       write SetItem;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#Active">Active</a></b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#Active">Active</a></strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#Routes">Routes</a></b>: <a  href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a> read FRoutes write SetRoutes;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#Routes">Routes</a></strong>: <a href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a> read FRoutes write SetRoutes;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#OnRoute">OnRoute</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnRoute write FOnRoute;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#OnRoute">OnRoute</a></strong>: <a href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnRoute write FOnRoute;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#OnNotFound">OnNotFound</a></b>: <a  href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnNotFound
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#OnNotFound">OnNotFound</a></strong>: <a href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnNotFound
       write FOnNotFound;</code></td>
 </tr>
 <tr class="list2">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#OnActivate">OnActivate</a></b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#OnActivate">OnActivate</a></strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <b><a  href="BrookURLRouter.TBrookURLRouter.html#OnDeactivate">OnDeactivate</a></b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookURLRouter.TBrookURLRouter.html#OnDeactivate">OnDeactivate</a></strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOwner: TComponent); override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -141,8 +131,8 @@ Creates an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRou
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -151,8 +141,8 @@ Destroys an instance of <code><a class="normal" href="BrookURLRouter.TBrookURLRo
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: <a  href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEnumerator"></span><code>function <strong>GetEnumerator</strong>: <a href="BrookURLRouter.TBrookURLRoutesEnumerator.html">TBrookURLRoutesEnumerator</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -161,8 +151,8 @@ Creates an enumerator to iterate the <a class="normal" href="BrookURLRouter.TBro
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Add"></span><code>function <b>Add</b>: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a>; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -172,8 +162,8 @@ Adds a new item to the <a class="normal" href="BrookURLRouter.TBrookURLRouter.ht
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Remove"></span><code>procedure <b>Remove</b>(const APattern: string); inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>procedure <strong>Remove</strong>(const APattern: string); inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -187,8 +177,8 @@ Removes an item from the <a class="normal" href="BrookURLRouter.TBrookURLRouter.
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; inline;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -197,8 +187,8 @@ Clears the <a class="normal" href="BrookURLRouter.TBrookURLRouter.html#Routes">r
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Open"></span><code>procedure <b>Open</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Open"></span><code>procedure <strong>Open</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -207,8 +197,8 @@ Enabled the router component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Close"></span><code>procedure <b>Close</b>;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Close"></span><code>procedure <strong>Close</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -217,8 +207,8 @@ Disables the router component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="DispatchRoute"></span><code>function <b>DispatchRoute</b>(const APath: string; AUserData: Pointer): Boolean; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DispatchRoute"></span><code>function <strong>DispatchRoute</strong>(const APath: string; AUserData: Pointer): Boolean; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -234,8 +224,8 @@ Finds a <a class="normal" href="BrookURLRouter.TBrookURLRouter.html#Route">route
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Route"></span><code>procedure <b>Route</b>(ASender: TObject; const APath: string; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Route"></span><code>procedure <strong>Route</strong>(ASender: TObject; const APath: string; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -255,8 +245,8 @@ Finds a <a class="normal" href="BrookURLRouter.TBrookURLRouter.html#Route">route
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Route"></span><code>procedure <b>Route</b>(ASender: TObject; ARequest: <a  href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a  href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Route"></span><code>procedure <strong>Route</strong>(ASender: TObject; ARequest: <a href="BrookHTTPRequest.TBrookHTTPRequest.html">TBrookHTTPRequest</a>; AResponse: <a href="BrookHTTPResponse.TBrookHTTPResponse.html">TBrookHTTPResponse</a>); overload; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -275,8 +265,8 @@ Finds a <a class="normal" href="BrookURLRouter.TBrookURLRouter.html#Route">route
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[AIndex:Integer]: <a  href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Items"></span><code>property <strong>Items</strong>[AIndex:Integer]: <a href="BrookURLRouter.TBrookURLRoute.html">TBrookURLRoute</a> read GetItem
       write SetItem;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -286,8 +276,8 @@ Gets/sets a <a class="normal" href="BrookURLRouter.TBrookURLRouter.html#Route">r
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Active"></span><code>property <b>Active</b>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <strong>Active</strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -296,8 +286,8 @@ Enabled/disables the router component.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Routes"></span><code>property <b>Routes</b>: <a  href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a> read FRoutes write SetRoutes;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Routes"></span><code>property <strong>Routes</strong>: <a href="BrookURLRouter.TBrookURLRoutes.html">TBrookURLRoutes</a> read FRoutes write SetRoutes;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -306,8 +296,8 @@ Available <code>routes</code> list.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnRoute"></span><code>property <b>OnRoute</b>: <a  href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnRoute write FOnRoute;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnRoute"></span><code>property <strong>OnRoute</strong>: <a href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnRoute write FOnRoute;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -316,8 +306,8 @@ Event triggered when the router dispatches a <a class="normal" href="BrookURLRou
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnNotFound"></span><code>property <b>OnNotFound</b>: <a  href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnNotFound
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnNotFound"></span><code>property <strong>OnNotFound</strong>: <a href="BrookURLRouter.html#TBrookURLRouterRouteEvent">TBrookURLRouterRouteEvent</a> read FOnNotFound
       write FOnNotFound;</code></td>
 </tr>
 <tr><td colspan="2">
@@ -327,8 +317,8 @@ Event triggered when a <a class="normal" href="BrookURLRouter.TBrookURLRouter.ht
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnActivate"></span><code>property <b>OnActivate</b>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnActivate"></span><code>property <strong>OnActivate</strong>: TNotifyEvent read FOnActivate write FOnActivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -337,14 +327,14 @@ Event triggered when the router component is enabled.</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="OnDeactivate"></span><code>property <b>OnDeactivate</b>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="OnDeactivate"></span><code>property <strong>OnDeactivate</strong>: TNotifyEvent read FOnDeactivate write FOnDeactivate;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 Event triggered when the router component is disabled.</p>
 </td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>

@@ -10,28 +10,16 @@
 <link rel="StyleSheet" type="text/css" href="pasdoc.css">
 </head>
 <body>
-<table class="container"><tr><td class="navigation">
-<h2>Brook Tardigrade</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">Brook Tardigrade</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
 <div style="clear: both"></div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#tipue_search_input').tipuesearch({
-        /* 10 items to display seems standard */
-        'show': 10,
-        /* For PasDoc docs, showing urls is not very useful,
-           since the page title already shows the unit and identifier. */
-        'showURL': false
-    });
-});
-</script>
-</td><td class="content">
+</li></ul></div><div class="content">
 <span id="Sagui"></span><h1 class="cio">Record Sagui</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a  href="BrookUtility.html">BrookUtility</a></p>
+<a href="BrookUtility.html">BrookUtility</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
 <code>type Sagui = record</code></p>
@@ -42,55 +30,70 @@ Global <code>Sagui</code> object containing general purpose functions.</p>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#Version">Version</a></b>: Cardinal; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#Version">Version</a></strong>: Cardinal; overload; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#Version">Version</a></b>(out AMajor, AMinor: Byte; out APatch: SmallInt): Cardinal; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#Version">Version</a></strong>(out AMajor, AMinor: Byte; out APatch: SmallInt): Cardinal; overload; static;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#VersionStr">VersionStr</a></b>: string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#VersionStr">VersionStr</a></strong>: string; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#Malloc">Malloc</a></b>(ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#Malloc">Malloc</a></strong>(ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#Alloc">Alloc</a></b>(ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#Alloc">Alloc</a></strong>(ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#Realloc">Realloc</a></b>(APointer: Pointer; ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#Realloc">Realloc</a></strong>(APointer: Pointer; ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class procedure <b><a  href="BrookUtility.Sagui.html#Free">Free</a></b>(APointer: Pointer); static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BrookUtility.Sagui.html#Free">Free</a></strong>(APointer: Pointer); static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class procedure <b><a  href="BrookUtility.Sagui.html#StrError">StrError</a></b>(AErrorNum: Integer; out AErrorMsg: string; AErrorLen: Integer); overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BrookUtility.Sagui.html#StrError">StrError</a></strong>(AErrorNum: Integer; out AErrorMsg: string; AErrorLen: Integer); overload; static; inline;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#StrError">StrError</a></b>(AErrorNum: Integer): string; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#StrError">StrError</a></strong>(AErrorNum: Integer): string; overload; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#IsPost">IsPost</a></b>(const AMethod: string): Boolean; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#IsPost">IsPost</a></strong>(const AMethod: string): Boolean; static;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#ExtractEntryPoint">ExtractEntryPoint</a></b>(const APath: string): string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#ExtractEntryPoint">ExtractEntryPoint</a></strong>(const APath: string): string; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#TmpDir">TmpDir</a></b>: string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#TmpDir">TmpDir</a></strong>: string; static;</code></td>
 </tr>
 <tr class="list">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#EOR">EOR</a></b>(AError: Boolean): NativeInt; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#EOR">EOR</a></strong>(AError: Boolean): NativeInt; static;</code></td>
 </tr>
 <tr class="list2">
-<td class="itemcode"><code>class function <b><a  href="BrookUtility.Sagui.html#IP">IP</a></b>(ASocket: Pointer): string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BrookUtility.Sagui.html#IP">IP</a></strong>(ASocket: Pointer): string; static;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Version"></span><code>class function <b>Version</b>: Cardinal; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Version"></span><code>class function <strong>Version</strong>: Cardinal; overload; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns the library <a class="normal" href="BrookUtility.Sagui.html#Version">version</a> number. </p>
 <h6 class="description_section">Returns</h6>
@@ -98,9 +101,10 @@ Returns the library <a class="normal" href="BrookUtility.Sagui.html#Version">ver
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Version"></span><code>class function <b>Version</b>(out AMajor, AMinor: Byte; out APatch: SmallInt): Cardinal; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Version"></span><code>class function <strong>Version</strong>(out AMajor, AMinor: Byte; out APatch: SmallInt): Cardinal; overload; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns the library <code>version</code> number.    </p>
 <h6 class="description_section">Parameters</h6>
@@ -117,9 +121,10 @@ Returns the library <code>version</code> number.    </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="VersionStr"></span><code>class function <b>VersionStr</b>: string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VersionStr"></span><code>class function <strong>VersionStr</strong>: string; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns the library <a class="normal" href="BrookUtility.Sagui.html#Version">version</a> number as string in the format <code>&lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt;</code>. </p>
 <h6 class="description_section">Returns</h6>
@@ -127,9 +132,10 @@ Returns the library <a class="normal" href="BrookUtility.Sagui.html#Version">ver
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Malloc"></span><code>class function <b>Malloc</b>(ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Malloc"></span><code>class function <strong>Malloc</strong>(ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Allocates a new memory space.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -140,7 +146,7 @@ Allocates a new memory space.  </p>
 <h6 class="description_section">Returns</h6>
 <p class="return">Pointer of the allocated zero-initialized memory.
 
-<p><b>Returns values:</b> </p>
+<p><strong>Returns values:</strong> </p>
 
 <dl class="paragraph_spacing">
   <dt><code>nil</code></dt>
@@ -151,9 +157,10 @@ Allocates a new memory space.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Alloc"></span><code>class function <b>Alloc</b>(ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Alloc"></span><code>class function <strong>Alloc</strong>(ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Allocates a new zero-initialized memory space.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -164,7 +171,7 @@ Allocates a new zero-initialized memory space.  </p>
 <h6 class="description_section">Returns</h6>
 <p class="return">Pointer of the allocated zero-initialized memory.
 
-<p><b>Returns values:</b> </p>
+<p><strong>Returns values:</strong> </p>
 
 <dl class="paragraph_spacing">
   <dt><code>nil</code></dt>
@@ -175,9 +182,10 @@ Allocates a new zero-initialized memory space.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Realloc"></span><code>class function <b>Realloc</b>(APointer: Pointer; ASize: NativeUInt): Pointer; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Realloc"></span><code>class function <strong>Realloc</strong>(APointer: Pointer; ASize: NativeUInt): Pointer; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Reallocates an existing memory block.   </p>
 <h6 class="description_section">Parameters</h6>
@@ -192,9 +200,10 @@ Reallocates an existing memory block.   </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Free"></span><code>class procedure <b>Free</b>(APointer: Pointer); static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Free"></span><code>class procedure <strong>Free</strong>(APointer: Pointer); static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Frees a memory space previous allocated by <code><a class="normal" href="BrookUtility.Sagui.html#Malloc">Sagui.Malloc</a></code>, <a class="normal" href="BrookUtility.Sagui.html#Alloc">Sagui.Alloc</a> or <code><a class="normal" href="BrookUtility.Sagui.html#Realloc">Sagui.Realloc</a></code>. </p>
 <h6 class="description_section">Parameters</h6>
@@ -206,9 +215,10 @@ Frees a memory space previous allocated by <code><a class="normal" href="BrookUt
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="StrError"></span><code>class procedure <b>StrError</b>(AErrorNum: Integer; out AErrorMsg: string; AErrorLen: Integer); overload; static; inline;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StrError"></span><code>class procedure <strong>StrError</strong>(AErrorNum: Integer; out AErrorMsg: string; AErrorLen: Integer); overload; static; inline;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns string describing an error number.   </p>
 <h6 class="description_section">Parameters</h6>
@@ -224,9 +234,10 @@ Returns string describing an error number.   </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="StrError"></span><code>class function <b>StrError</b>(AErrorNum: Integer): string; overload; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StrError"></span><code>class function <strong>StrError</strong>(AErrorNum: Integer): string; overload; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns string describing an error number.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -239,9 +250,10 @@ Returns string describing an error number.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="IsPost"></span><code>class function <b>IsPost</b>(const AMethod: string): Boolean; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsPost"></span><code>class function <strong>IsPost</strong>(const AMethod: string): Boolean; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Checks if a string is an HTTP post method.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -254,9 +266,10 @@ Checks if a string is an HTTP post method.  </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="ExtractEntryPoint"></span><code>class function <b>ExtractEntryPoint</b>(const APath: string): string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExtractEntryPoint"></span><code>class function <strong>ExtractEntryPoint</strong>(const APath: string): string; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Extracts the entry-point of a path or resource. For example, given a path <code>/api1/customer</code>, the part considered as entry-point is <code>/api1</code>.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -269,9 +282,10 @@ Extracts the entry-point of a path or resource. For example, given a path <code>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="TmpDir"></span><code>class function <b>TmpDir</b>: string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TmpDir"></span><code>class function <strong>TmpDir</strong>: string; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Returns the system temporary directory. </p>
 <h6 class="description_section">Returns</h6>
@@ -279,9 +293,10 @@ Returns the system temporary directory. </p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="EOR"></span><code>class function <b>EOR</b>(AError: Boolean): NativeInt; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EOR"></span><code>class function <strong>EOR</strong>(AError: Boolean): NativeInt; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Indicates the end-of-read processed in <code><a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#SendStream">TBrookHTTPResponse.SendStream</a></code>.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -294,9 +309,10 @@ Indicates the end-of-read processed in <code><a class="normal" href="BrookHTTPRe
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="IP"></span><code>class function <b>IP</b>(ASocket: Pointer): string; static;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IP"></span><code>class function <strong>IP</strong>(ASocket: Pointer): string; static;</code></td>
 </tr>
-<tr><td colspan="1">
+<tr><td colspan="2">
 <p>
 Obtains the <code>IP</code> of a socket handle into a string.  </p>
 <h6 class="description_section">Parameters</h6>
@@ -307,6 +323,6 @@ Obtains the <code>IP</code> of a socket handle into a string.  </p>
 <h6 class="description_section">Returns</h6>
 <p class="return">Formatted <code>IP</code> into a string.</p></td></tr>
 </table>
-<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+<hr><span class="appinfo"><em>Generated by <a href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
 </span>
-</td></tr></table></body></html>
+</div></div></body></html>
