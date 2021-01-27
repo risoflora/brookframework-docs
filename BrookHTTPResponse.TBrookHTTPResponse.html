@@ -107,9 +107,13 @@ Class which dispatches <a class="normal" href="BrookHTTPResponse.TBrookHTTPRespo
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BrookHTTPResponse.TBrookHTTPResponse.html#Clear">Clear</a></strong>; virtual;</code></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPResponse.TBrookHTTPResponse.html#Reset">Reset</a></strong>; virtual;</code></td>
 </tr>
 <tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BrookHTTPResponse.TBrookHTTPResponse.html#Clear">Clear</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <strong><a href="BrookHTTPResponse.TBrookHTTPResponse.html#IsEmpty">IsEmpty</a></strong>: Boolean;</code></td>
 </tr>
@@ -452,11 +456,21 @@ Sends a file to be rendered. </p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Reset"></span><code>procedure <strong>Reset</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Resets status and internal buffers of the response <a class="normal" href="BrookHandledClasses.TBrookHandledPersistent.html#Handle">handle</a> preserving all <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">headers</a> and <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Cookies">cookies</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Clears all <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">headers</a>, <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Cookies">cookies</a>, statuses and internal buffers of the response object.</p>
+Clears all <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Headers">headers</a>, <a class="normal" href="BrookHTTPResponse.TBrookHTTPResponse.html#Cookies">cookies</a>, status and internal buffers of the response object.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
