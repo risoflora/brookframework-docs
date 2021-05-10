@@ -22,12 +22,13 @@
 <a href="BrookUtility.html">BrookUtility</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
-<code>type TBrookLocker = class(TObject)</code></p>
+<code>type TBrookLocker = class(TPersistent)</code></p>
 <h2 class="description">Description</h2>
 <p>
 Allows to <a class="normal" href="BrookUtility.TBrookLocker.html#Lock">lock</a> other threads from accessing a block of code.</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor">TPersistent</li>
 <li class="thisitem">TBrookLocker</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
@@ -55,8 +56,8 @@ Allows to <a class="normal" href="BrookUtility.TBrookLocker.html#Lock">lock</a> 
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BrookUtility.TBrookLocker.html#Active">Active</a></strong>: Boolean read FActive write SetActive;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookUtility.TBrookLocker.html#Active">Active</a></strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -114,8 +115,8 @@ Tries to <a class="normal" href="BrookUtility.TBrookLocker.html#Lock">lock</a> a
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Active"></span><code>property <strong>Active</strong>: Boolean read FActive write SetActive;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <strong>Active</strong>: Boolean read FActive write SetActive stored IsActiveStored;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

@@ -126,25 +126,29 @@ Class which provides <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#IsUploading">IsUploading</a></strong>: Boolean read FIsUploading;</code></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#IsIsolated">IsIsolated</a></strong>: Boolean read FIsIsolated;</code></td>
 </tr>
 <tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#IsUploading">IsUploading</a></strong>: Boolean read FIsUploading;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#Uploads">Uploads</a></strong>: <a href="BrookHTTPUploads.TBrookHTTPUploads.html">TBrookHTTPUploads</a> read FUploads;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#Files">Files</a></strong>: <a href="BrookHTTPUploads.TBrookHTTPUploads.html">TBrookHTTPUploads</a> read FUploads;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#Client">Client</a></strong>: Pointer read FClient;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#TLSSession">TLSSession</a></strong>: Pointer read FTLSSession;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPRequest.TBrookHTTPRequest.html#UserData">UserData</a></strong>: Pointer read GetUserData write SetUserData;</code></td>
 </tr>
@@ -382,6 +386,16 @@ Where the request originated.</p>
 <tr><td colspan="2">
 <p>
 Contains the levels of the <a class="normal" href="BrookHTTPRequest.TBrookHTTPRequest.html#Path">path</a> component.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsIsolated"></span><code>property <strong>IsIsolated</strong>: Boolean read FIsIsolated;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if the request was isolated from the main event loop to an own dedicated thread.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
