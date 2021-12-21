@@ -155,6 +155,7 @@ var tipuesearch = {"pages": [
      {"title": "BrookHTTPServer.TBrookHTTPServerSecurity.Certificate", "text": "   ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServerSecurity.html#Certificate"},
      {"title": "BrookHTTPServer.TBrookHTTPServerSecurity.Trust", "text": "   ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServerSecurity.html#Trust"},
      {"title": "BrookHTTPServer.TBrookHTTPServerSecurity.DHParams", "text": "   ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServerSecurity.html#DHParams"},
+     {"title": "BrookHTTPServer.TBrookHTTPServerSecurity.Priorities", "text": " Default: NORMAL.   ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServerSecurity.html#Priorities"},
      {"title": "BrookHTTPServer.EBrookHTTPServer", "text": "   ", "tags": "", "url": "BrookHTTPServer.EBrookHTTPServer.html"},
      {"title": "BrookHTTPServer.TBrookHTTPServer", "text": "   ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServer.html"},
      {"title": "BrookHTTPServer.TBrookHTTPServer.Create", "text": "   AOwner[in] Owner component. AOwner[in] Owner component. ", "tags": "", "url": "BrookHTTPServer.TBrookHTTPServer.html#Create"},
