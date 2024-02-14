@@ -50,14 +50,6 @@ Fast event-driven HTTP(S) server class.</p>
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Close">Close</a></strong>;</code></td>
 </tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Lock">Lock</a></strong>; inline;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Unlock">Unlock</a></strong>; inline;</code></td>
-</tr>
 </table>
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
@@ -76,8 +68,18 @@ Fast event-driven HTTP(S) server class.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#HostName">HostName</a></strong>: string read FHostName write SetHostName
+      stored IsHostNameStored;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Port">Port</a></strong>: UInt16 read GetPort write SetPort stored IsPortStored
       default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Backlog">Backlog</a></strong>: Word read FBacklog write SetBacklog stored IsBacklogStored
+      default <a href="BrookExtra.html#BROOK_BACKLOG">BROOK_BACKLOG</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
@@ -127,46 +129,42 @@ Fast event-driven HTTP(S) server class.</p>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Locker">Locker</a></strong>: <a href="BrookUtility.TBrookLocker.html">TBrookLocker</a> read FLocker write SetLocker;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#Security">Security</a></strong>: <a href="BrookHTTPServer.TBrookHTTPServerSecurity.html">TBrookHTTPServerSecurity</a> read FSecurity
       write SetSecurity;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnAuthenticate">OnAuthenticate</a></strong>: <a href="BrookHTTPServer.html#TBrookHTTPAuthenticateEvent">TBrookHTTPAuthenticateEvent</a> read FOnAuthenticate
       write FOnAuthenticate;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnAuthenticateError">OnAuthenticateError</a></strong>: <a href="BrookHTTPServer.html#TBrookHTTPAuthenticateErrorEvent">TBrookHTTPAuthenticateErrorEvent</a>
       read FOnAuthenticateError write FOnAuthenticateError;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnRequest">OnRequest</a></strong>: <a href="BrookHTTPServer.html#TBrookHTTPRequestEvent">TBrookHTTPRequestEvent</a> read FOnRequest write FOnRequest;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnRequestError">OnRequestError</a></strong>: <a href="BrookHTTPServer.html#TBrookHTTPRequestErrorEvent">TBrookHTTPRequestErrorEvent</a> read FOnRequestError
       write FOnRequestError;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnClientConnection">OnClientConnection</a></strong>: <a href="BrookHTTPServer.html#TBrookHTTPServerClientConnectionEvent">TBrookHTTPServerClientConnectionEvent</a>
       read FOnClientConnection write FOnClientConnection;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnError">OnError</a></strong>: <a href="BrookUtility.html#TBrookErrorEvent">TBrookErrorEvent</a> read FOnError write FOnError;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnStart">OnStart</a></strong>: TNotifyEvent read FOnStart write FOnStart;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><code>property <strong><a href="BrookHTTPServer.TBrookHTTPServer.html#OnStop">OnStop</a></strong>: TNotifyEvent read FOnStop write FOnStop;</code></td>
 </tr>
@@ -218,26 +216,6 @@ Starts the HTTP(S) server.</p>
 Stops the HTTP(S) server.</p>
 </td></tr>
 </table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Lock"></span><code>procedure <strong>Lock</strong>; inline;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Locks all other requests.</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Unlock"></span><code>procedure <strong>Unlock</strong>; inline;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Unlocks all other requests.</p>
-</td></tr>
-</table>
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
@@ -273,12 +251,34 @@ Enables/disables the basic HTTP authentication.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="HostName"></span><code>property <strong>HostName</strong>: string read FHostName write SetHostName
+      stored IsHostNameStored;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Host name for listening to connections.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
 <td class="itemcode"><span id="Port"></span><code>property <strong>Port</strong>: UInt16 read GetPort write SetPort stored IsPortStored
       default 0;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
 <code>Port</code> for listening to connections.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><span id="Backlog"></span><code>property <strong>Backlog</strong>: Word read FBacklog write SetBacklog stored IsBacklogStored
+      default <a href="BrookExtra.html#BROOK_BACKLOG">BROOK_BACKLOG</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum length of the queue of pending connections. Default: 511.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
@@ -379,16 +379,6 @@ Concurrent connections limit. Use zero for no limit.</p>
 <tr><td colspan="2">
 <p>
 Enables/disables the favicon handling. If <code>True</code>, it avoids <code>404</code> errors by sending an empty content (<code>204</code>) if path is <code>'/favicon.ico'</code>.</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
-<td class="itemcode"><span id="Locker"></span><code>property <strong>Locker</strong>: <a href="BrookUtility.TBrookLocker.html">TBrookLocker</a> read FLocker write SetLocker;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Allows to <a class="normal" href="BrookHTTPServer.TBrookHTTPServer.html#Lock">lock</a> other requests from accessing a block of code.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">

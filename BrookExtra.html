@@ -33,18 +33,21 @@ Contains useful extra types for the framework.</p>
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_UPLOADS_LIMIT">BROOK_UPLOADS_LIMIT</a></strong> = 67108864;</code></td>
 </tr>
 <tr class="list2">
+<td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_BACKLOG">BROOK_BACKLOG</a></strong> = 511;</code></td>
+</tr>
+<tr class="list">
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_MIN_BUFFER_SIZE">BROOK_MIN_BUFFER_SIZE</a></strong> = 128;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_BUFFER_SIZE">BROOK_BUFFER_SIZE</a></strong> = 4096;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_FILE_RIGHTS">BROOK_FILE_RIGHTS</a></strong> = 438;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_CT_TEXT_PLAIN">BROOK_CT_TEXT_PLAIN</a></strong> = 'text/plain; charset=utf-8';</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code><strong><a href="BrookExtra.html#BROOK_CT_OCTET_STREAM">BROOK_CT_OCTET_STREAM</a></strong> = 'application/octet-stream';</code></td>
 </tr>
 </table>
@@ -75,6 +78,15 @@ Default payload limit (in bytes).</p>
 <tr><td colspan="1">
 <p>
 Default upload(s) limit (in bytes).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BROOK_BACKLOG"></span><code><strong>BROOK_BACKLOG</strong> = 511;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default maximum length of the queue of pending connections.</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
